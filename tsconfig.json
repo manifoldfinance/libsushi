@@ -1,5 +1,15 @@
 {
   "compilerOptions": {
+    "paths": {
+      "@app/*": ["app/*"],
+      "@config/*": ["app/_config/*"],
+      "@environment/*": ["environments/*"],
+      "@shared/*": ["src/_shared/*"],
+      "@helpers/*": ["src/helpers/*"],
+      "@interface/*": ["src/interface/*"],
+      "@guard/*": ["src/SushiGuard/*"]
+  },
+  "baseUrl": "./",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
