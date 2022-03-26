@@ -7,24 +7,36 @@
       "@shared/*": ["src/_shared/*"],
       "@helpers/*": ["src/helpers/*"],
       "@interface/*": ["src/interface/*"],
-      "@guard/*": ["src/SushiGuard/*"]
-  },
-  "baseUrl": "./",
+      "@guard/*": ["src/SushiGuard/*"],
+    },
+    "baseUrl": "./",
     "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
+    "declaration": true,
     "forceConsistentCasingInFileNames": true,
-    "module": "Commonjs",
+    "esModuleInterop": true,
+    "jsx": "react",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "outDir": "./lib",
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "es2017",
+      "esnext"
+    ],
+    "noImplicitAny": true,
     "removeComments": true,
+    "resolveJsonModule": true,
     "importHelpers": true,
     "downlevelIteration": true,
     "preserveConstEnums": true,
-    "moduleResolution": "node",
     "rootDir": "./src",
-    "outDir": "./dist/",
-    "sourceMap": true,
-    "lib": ["DOM", "DOM.Iterable"],
-    "strict": true,
-    "types": ["node"],
-    "target": "es2020"
-  }
+    "sourceMap": true
+  },
+  "include": [
+    "src/**/*"
+  ]
 }

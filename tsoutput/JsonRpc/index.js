@@ -5,7 +5,7 @@ export class HttpJsonRpcError extends Error {
         this.res = res;
     }
 }
-export function fetchJsonRpc(url, { jsonrpc = '2.0', id = new Date().getTime(), method = '', params = [], }) {
+export function fetchJsonRpc(url, { jsonrpc = '2.0', id = new Date().getTime(), method = '', params = [] }) {
     return fetch(url, {
         headers: { 'Content-Type': 'application/json' },
         method: 'POST',

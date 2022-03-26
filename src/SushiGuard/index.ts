@@ -10,6 +10,7 @@ import { JsonRpcResponse } from '../JsonRpc/index';
  * - ERROR -> Relay hasen't received the TX || none of the miners accepted the Tx || Tx was not mined sucessfully
  *
  */
+
 export enum PrivateTxState {
   UNCHECKED = 'UNCHECKED',
   PROCESSING = 'PROCESSING',
