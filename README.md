@@ -1,6 +1,7 @@
 # [libsushi](#)
 
-![npm](https://img.shields.io/npm/v/libsushi?label=libsushi)
+![npm](https://img.shields.io/npm/v/libsushi?label=libsushi) [![typedoc - v0.1.0](https://img.shields.io/badge/typedoc-v0.1.0-blue)](https://manifoldfinance.github.io/libsushi/)
+
 
 > OpenMEV Library for SushiSwap's SushiGuard
 
