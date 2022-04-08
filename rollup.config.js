@@ -1,26 +1,33 @@
-import typescript from '@rollup/plugin-typescript';
-import dts from 'rollup-plugin-dts';
-import compiler from '@ampproject/rollup-plugin-closure-compiler';
-import pkg from './package.json';
+import dts from 'rollup-plugin-dts'
+import esbuild from 'rollup-plugin-esbuild'
 
-const config = [ {
+const bundle = (config) => ({
+  ...config,
   input: 'src/index.ts',
-  output: [
-    {
-      file: pkg.main,
-      format: 'cjs',
-    },
-  ],
-  plugins: [
-    typescript(),
-    compiler(),
-  ],
-},
-{
-  input: 'src/index.ts',
-  output: [{ file: pkg.types, format: 'cjs' }],
-  plugins: [dts()],
-},
-];
+  external: (id) => !/^[./]/.test(id)
+})
 
-export default config;
+export default [
+  bundle({
+    plugins: [esbuild()],
+    output: [
+      {
+        file: `dist/index.js`,
+        format: 'cjs',
+        sourcemap: true
+      },
+      {
+        file: `dist/index.mjs`,
+        format: 'es',
+        sourcemap: true
+      }
+    ]
+  }),
+  bundle({
+    plugins: [dts()],
+    output: {
+      file: `dist/index.d.ts`,
+      format: 'es'
+    }
+  })
+]
