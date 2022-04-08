@@ -1,7 +1,7 @@
-/** 
- * 
+/**
+ *
  * @filename reducer
- * 
+ *
  */
 
 import { createReducer } from '@reduxjs/toolkit';
