@@ -1,8 +1,7 @@
-
-export * from  './Interface/JsonRpc';
-export * from  './JsonRpc';
-export * from  './SecureRpc/ChainId';
-export * from  './SecureRpc/OpenMevState';
+export * from './Interface/JsonRpc';
+export * from './JsonRpc';
+export * from './SecureRpc/ChainId';
+export * from './SecureRpc/OpenMevState';
 export * from './SecureRpc/actions';
 export * from './SecureRpc/privateTransaction';
 //export * from './SecureRpc/reducer';
