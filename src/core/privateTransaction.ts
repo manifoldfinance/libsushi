@@ -1,4 +1,4 @@
-import { JsonRpcResponse } from '../JsonRpc';
+import { JsonRpcResponse } from '../jsonrpc';
 
 /**
  *   @enum PrivateTxState
