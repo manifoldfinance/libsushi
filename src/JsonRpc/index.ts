@@ -70,7 +70,7 @@ export function fetchJsonRpc<T>(
     if (res.status !== 200) throw new HttpJsonRpcError(res.statusText, { jsonrpc, id, method, params }, res);
 
     // handle successful response
-    return res.json()
-    console.log(res.json)  
+    return res.json();
+    console.log(res.json);
   });
 }

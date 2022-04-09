@@ -1,4 +1,4 @@
-/** 
+/**
  * @package OpenMev Transaction
  */
 
@@ -9,7 +9,7 @@
 import * as PrivateTransaction from './isTxState';
 export { PrivateTransaction };
 
-/** 
+/**
  * @exports isTxState
  */
 import { isTxIndeterminate, isTxPending, isTxSuccessful, txMinutesPending } from './isTxState';
