@@ -66,7 +66,6 @@ export function validateJsonRpcResponse<T>(response: any): response is IJsonRpcR
   return true;
 }
 
-
 // TODO - Replace with JsonRpc Response type ok() and error()
 /**
  * @export
