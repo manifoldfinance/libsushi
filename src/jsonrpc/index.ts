@@ -41,6 +41,17 @@ export interface JsonRpcResponse<T> {
 
 /**
  * @export
+ * @interface JsonRpcPayload
+ */
+export interface JsonRpcPayload {
+    jsonrpc: string;
+    method: string;
+    params?: any[];
+    id?: string | number;
+}
+
+/**
+ * @export
  * @class HttpJsonRpcError
  * @extends {Error}
  */
