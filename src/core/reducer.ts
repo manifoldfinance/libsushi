@@ -1,12 +1,12 @@
 /**
  *
- * @filename reducer
+ * @filename Redux Reducer
  *
  */
 
 import { createReducer } from '@reduxjs/toolkit';
 import { ChainId } from './ChainId';
-import { PrivateTxState, PrivateTxStatus } from './OpenMevState';
+import { PrivateTxState, PrivateTxStatus } from './PrivateTxState';
 import { txMinutesPending } from './transaction';
 
 import {

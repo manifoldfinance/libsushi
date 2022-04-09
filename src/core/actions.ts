@@ -1,17 +1,12 @@
 /**
- * @filename actions
- * @version 0.1.0
- *
+ * @filename Redux Action
+ * @version 0.2.0
  */
 import { createAction } from '@reduxjs/toolkit';
-
-import { PrivateTxState, PrivateTxStatus } from './OpenMevState';
-
+import { PrivateTxState, PrivateTxStatus } from './PrivateTxState';
 import { ChainId } from './ChainId';
 
 /**
- *
- *
  * @export
  * @interface SerializableTransactionReceipt
  */
@@ -52,8 +47,6 @@ export const updatePrivateTxStatus = createAction<{
 }>('transactions/updatePrivateTxStatus');
 
 /**
- *
- *
  * @export
  * @interface TransactionDetails
  */
