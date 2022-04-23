@@ -8,7 +8,7 @@
  *
  */
 
-import { PrivateTxState } from './OpenMevState';
+import { PrivateTxState } from './privateTransaction';
 import { TransactionDetails } from './reducer';
 
 /**

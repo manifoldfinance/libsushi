@@ -3,7 +3,7 @@
  * @version 0.2.0
  */
 import { createAction } from '@reduxjs/toolkit';
-import { PrivateTxState, PrivateTxStatus } from './PrivateTxState';
+import { PrivateTxState, PrivateTxStatus } from './privateTransaction';
 import { ChainId } from './ChainId';
 
 /**

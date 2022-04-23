@@ -1,15 +1,5 @@
 {
   "compilerOptions": {
-    "paths": {
-      "@app/*": ["app/*"],
-      "@config/*": ["app/_config/*"],
-      "@environment/*": ["environments/*"],
-      "@shared/*": ["src/_shared/*"],
-      "@helpers/*": ["src/helpers/*"],
-      "@interface/*": ["src/interface/*"],
-      "@guard/*": ["src/SushiGuard/*"],
-    },
-    "baseUrl": "./",
     "allowSyntheticDefaultImports": true,
     "declaration": true,
     "forceConsistentCasingInFileNames": true,
@@ -37,6 +27,6 @@
     "sourceMap": true
   },
   "include": [
-    "src/**/*"
+    "src/**/*.ts"
   ]
 }

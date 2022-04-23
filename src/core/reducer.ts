@@ -6,7 +6,7 @@
 
 import { createReducer } from '@reduxjs/toolkit';
 import { ChainId } from './ChainId';
-import { PrivateTxState, PrivateTxStatus } from './PrivateTxState';
+import { PrivateTxState, PrivateTxStatus } from './privateTransaction';
 import { txMinutesPending } from './transaction';
 
 import {
