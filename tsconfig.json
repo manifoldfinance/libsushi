@@ -23,7 +23,6 @@
     "downlevelIteration": true,
     "preserveConstEnums": true,
     "rootDir": "./src",
-    "outDir": "./dist",
     "sourceMap": true
   },
   "include": [
