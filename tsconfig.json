@@ -5,7 +5,7 @@
     "forceConsistentCasingInFileNames": true,
     "esModuleInterop": false,
     "jsx": "react",
-    "module": "esnext",
+    "module": "ES2018",
     "moduleResolution": "node",
     "outDir": "./lib",
     "skipLibCheck": true,
@@ -14,8 +14,7 @@
     "lib": [
       "dom",
       "dom.iterable",
-      "es2020",
-      "esnext"
+      "es2018"
     ],
     "noImplicitAny": true,
     "removeComments": true,
@@ -24,6 +23,7 @@
     "downlevelIteration": true,
     "preserveConstEnums": true,
     "rootDir": "./src",
+    "outDir": "./dist",
     "sourceMap": true
   },
   "include": [
