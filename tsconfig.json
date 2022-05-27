@@ -1,28 +1,19 @@
 {
   "compilerOptions": {
     "allowSyntheticDefaultImports": false,
+    "declaration": true,
     "forceConsistentCasingInFileNames": true,
     "esModuleInterop": false,
-    "preserveValueImports": true,
-    "emitDecoratorMetadata": false,
-    "experimentalDecorators": false,
-    "allowUnreachableCode": false,
-    "strictFunctionTypes": true, 
-    "isolatedModules": true,
-    "declaration": true,
-    "sourceMap": false,
-    "module": "ES2020",
+    "jsx": "react",
+    "module": "esnext",
     "moduleResolution": "node",
-    "target": "ESNext",
+    "target": "ES2020",
     "rootDir": "src",
     "outDir": "dist",
     "importHelpers": true,
     "downlevelIteration": true,
-    "preserveConstEnums": true,
-    "types" : []
+    "preserveConstEnums": true
   },
-  "include": [
-    "src/**/*.ts"
-  ],
-  "exclude": ["**/node_modules", "**/.*/"],
+  "include": ["src/**/*.ts"],
+  "exclude": ["**/node_modules", "**/.*/", "src/**/*.test.ts"]
 }
