@@ -7,26 +7,13 @@
     "jsx": "react",
     "module": "esnext",
     "moduleResolution": "node",
-    "outDir": "./lib",
-    "skipLibCheck": true,
-    "strict": true,
-    "target": "es2020",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "es2020",
-      "esnext"
-    ],
-    "noImplicitAny": true,
-    "removeComments": true,
-    "resolveJsonModule": true,
+    "target": "ES2020",
+    "rootDir": "src",
+    "outDir": "dist",
     "importHelpers": true,
     "downlevelIteration": true,
-    "preserveConstEnums": true,
-    "rootDir": "./src",
-    "sourceMap": true
+    "preserveConstEnums": true
   },
-  "include": [
-    "src/**/*.ts"
-  ]
+  "include": ["src/**/*.ts"],
+  "exclude": ["**/node_modules", "**/.*/", "src/**/*.test.ts"]
 }
