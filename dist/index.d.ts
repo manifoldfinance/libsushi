@@ -338,7 +338,7 @@ declare function txMinutesPending(tx?: TransactionDetails): number;
  */
 declare function isTxExpired(tx?: TransactionDetails): boolean;
 
-declare const BURN_ADDRESS = 57005;
+declare const BURN_ADDRESS = "0x000000000000000000000000000000000000dead";
 
 declare const AddressZero = "0x0000000000000000000000000000000000000000";
 

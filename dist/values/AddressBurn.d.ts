@@ -1,1 +1,1 @@
-export declare const BURN_ADDRESS = 57005;
+export declare const BURN_ADDRESS = "0x000000000000000000000000000000000000dead";

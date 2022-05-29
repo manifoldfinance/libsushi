@@ -292,11 +292,11 @@ function isJsonRpcError(response) {
     return !!response.error && !response.result;
 }
 
-const BURN_ADDRESS = 0x000000000000000000000000000000000000dead;
+const BURN_ADDRESS = '0x000000000000000000000000000000000000dead';
 
 const AddressZero = '0x0000000000000000000000000000000000000000';
 
-const EIP191_PREFIX_FOR_EIP712_STRUCTURED_DATA = '\x19\x01';
+const EIP191_PREFIX_FOR_EIP712_STRUCTURED_DATA = `\x19\x01`;
 
 // @note this is also the old OVM_ETH address on Optimism
 const DeadAddress = '0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000';
