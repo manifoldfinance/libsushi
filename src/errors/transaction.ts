@@ -11,14 +11,10 @@ export const getTransactionError = async (
     throw TypeError(`tx argument ${tx} must be a transaction object`);
   }
   if (typeof receipt !== 'object') {
-    throw TypeError(
-      `receipt argument ${receipt} must be a transaction receipt object`,
-    );
+    throw TypeError(`receipt argument ${receipt} must be a transaction receipt object`);
   }
   if (receipt.status) {
-    throw TypeError(
-      'Transaction did not fail. Can only read the revert reason from failed transactions',
-    );
+    throw TypeError('Transaction did not fail. Can only read the revert reason from failed transactions');
   }
   if (!receipt.transactionHash) {
     throw TypeError(`There is no transaction hash on the receipt object`);
@@ -46,9 +42,7 @@ export const getTransactionError = async (
       const errorObject = JSON.parse(errorObjectStr);
 
       if (!errorObject.data) {
-        throw Error(
-          'Failed to parse data field error object:' + errorObjectStr,
-        );
+        throw Error('Failed to parse data field error object:' + errorObjectStr);
       }
 
       if (errorObject.data.startsWith('Reverted 0x')) {
@@ -58,14 +52,10 @@ export const getTransactionError = async (
         // Trim "0x" from the data field
         rawMessageData = errorObject.data.slice(2);
       } else {
-        throw Error(
-          'Failed to parse data field of error object:' + errorObjectStr,
-        );
+        throw Error('Failed to parse data field of error object:' + errorObjectStr);
       }
     } else {
-      throw Error(
-        'Failed to parse error message from Ethereum call: ' + e.message,
-      );
+      throw Error('Failed to parse error message from Ethereum call: ' + e.message);
     }
   }
 
