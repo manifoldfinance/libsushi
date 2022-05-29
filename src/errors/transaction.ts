@@ -58,6 +58,7 @@ export interface ErrorFetchResponse {
  * @export ErrorCode
  * @summary EthersJs ErrorCode
  */
+// prettier-ignore
 export type ErrorCode =
   // Generic Errors
   | 'UNKNOWN_ERROR'
@@ -228,47 +229,32 @@ export interface UnpredictableGasLimitError extends EthersError<'UNPREDICTABLE_G
 /**
  * @export CodedEthersError
  */
-export type CodedEthersError<T> = T extends 'UNKNOWN_ERROR'
-  ? UnknownError
-  : T extends 'NOT_IMPLEMENTED'
-  ? NotImplementedError
-  : T extends 'UNSUPPORTED_OPERATION'
-  ? UnsupportedOperationError
-  : T extends 'NETWORK_ERROR'
-  ? NetworkError
-  : T extends 'SERVER_ERROR'
-  ? ServerError
-  : T extends 'TIMEOUT'
-  ? TimeoutError
-  : T extends 'BAD_DATA'
-  ? BadDataError
-  : T extends 'BUFFER_OVERRUN'
-  ? BufferOverrunError
-  : T extends 'NUMERIC_FAULT'
-  ? NumericFaultError
-  : T extends 'INVALID_ARGUMENT'
-  ? InvalidArgumentError
-  : T extends 'MISSING_ARGUMENT'
-  ? MissingArgumentError
-  : T extends 'UNEXPECTED_ARGUMENT'
-  ? UnexpectedArgumentError
-  : T extends 'CALL_EXCEPTION'
-  ? CallExceptionError
-  : T extends 'INSUFFICIENT_FUNDS'
-  ? InsufficientFundsError
-  : T extends 'NONCE_EXPIRED'
-  ? NonceExpiredError
-  : T extends 'OFFCHAIN_FAULT'
-  ? OffchainFaultError
-  : T extends 'REPLACEMENT_UNDERPRICED'
-  ? ReplacementUnderpricedError
-  : T extends 'TRANSACTION_REPLACED'
-  ? TransactionReplacedError
-  : T extends 'UNCONFIGURED_NAME'
-  ? UnconfiguredNameError
-  : T extends 'UNPREDICTABLE_GAS_LIMIT'
-  ? UnpredictableGasLimitError
-  : never;
+// prettier-ignore
+export type CodedEthersError<T> =
+ T extends "UNKNOWN_ERROR" ? UnknownError:
+ T extends "NOT_IMPLEMENTED" ? NotImplementedError:
+ T extends "UNSUPPORTED_OPERATION" ? UnsupportedOperationError:
+ T extends "NETWORK_ERROR" ? NetworkError:
+ T extends "SERVER_ERROR" ? ServerError:
+ T extends "TIMEOUT" ? TimeoutError:
+ T extends "BAD_DATA" ? BadDataError:
+
+ T extends "BUFFER_OVERRUN" ? BufferOverrunError:
+ T extends "NUMERIC_FAULT" ? NumericFaultError:
+
+ T extends "INVALID_ARGUMENT" ? InvalidArgumentError:
+ T extends "MISSING_ARGUMENT" ? MissingArgumentError:
+ T extends "UNEXPECTED_ARGUMENT" ? UnexpectedArgumentError:
+
+ T extends "CALL_EXCEPTION" ? CallExceptionError:
+ T extends "INSUFFICIENT_FUNDS" ? InsufficientFundsError:
+ T extends "NONCE_EXPIRED" ? NonceExpiredError:
+ T extends "OFFCHAIN_FAULT" ? OffchainFaultError:
+ T extends "REPLACEMENT_UNDERPRICED" ? ReplacementUnderpricedError:
+ T extends "TRANSACTION_REPLACED" ? TransactionReplacedError:
+ T extends "UNCONFIGURED_NAME" ? UnconfiguredNameError:
+ T extends "UNPREDICTABLE_GAS_LIMIT" ? UnpredictableGasLimitError:
+ never;
 
 /**
  * #isError
@@ -317,7 +303,8 @@ export const getTransactionError = async (
     throw Error('Transaction failed as it ran out of gas.');
   }
 
-  let rawMessageData;
+  // TODO: check type
+  let rawMessageData: string;
   try {
     const result = await provider.call(
       {
@@ -326,13 +313,13 @@ export const getTransactionError = async (
       receipt.blockNumber,
     );
 
-    // Trim the 0x prefix
+    // @dev Trim the 0x prefix
     rawMessageData = result.slice(2);
   } catch (e) {
     if (e.message.startsWith('Node error: ')) {
-      // Trim "Node error: "
+      // @dev  Trim "Node error: "
       const errorObjectStr = e.message.slice(12);
-      // Parse the error object
+      // @dev Parse the error object
       const errorObject = JSON.parse(errorObjectStr);
 
       if (!errorObject.data) {
@@ -356,6 +343,11 @@ export const getTransactionError = async (
   return parseReasonCode(rawMessageData);
 };
 
+/**
+ * @export parseReasonCode
+ * @param messageData 
+ * @returns 
+ */
 export const parseReasonCode = (messageData: string): string => {
   // Get the length of the revert reason
   const strLen = parseInt(messageData.slice(8 + 64, 8 + 128), 16);
