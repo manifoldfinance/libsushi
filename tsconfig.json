@@ -11,7 +11,12 @@
     "outDir": "dist",
     "importHelpers": true,
     "downlevelIteration": true,
-    "preserveConstEnums": true
+    "preserveConstEnums": true,
+    "plugins": [
+      {
+        "name": "typescript-eslint-language-service"
+      }
+    ]
   },
   "include": ["src/**/*.ts"],
   "exclude": ["**/node_modules", "**/.*/", "src/**/*.test.ts"]
