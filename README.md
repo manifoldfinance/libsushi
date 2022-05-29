@@ -1,22 +1,21 @@
 # [libsushi](#)
 
-![npm](https://img.shields.io/npm/v/libsushi?label=libsushi) [![typedoc - v0.1.0](https://img.shields.io/badge/typedoc-v0.1.0-blue)](https://manifoldfinance.github.io/libsushi/)
-
+![npm](https://img.shields.io/npm/v/libsushi?label=libsushi)
+[![typedoc - v0.1.0](https://img.shields.io/badge/typedoc-v0.1.0-blue)](https://manifoldfinance.github.io/libsushi/)
 
 > OpenMEV Library for SushiSwap's SushiGuard
 
 ## Potential statuses
 
-* `PENDING` - The transaction was received and is currently being submitted to miners
-* `INCLUDED` - The transaction was included on-chain
-* `FAILED` - The transaction was submitted for 25 blocks and failed to be included on-chain
-* `CANCELLED` - The transaction was cancelled by the user and not included on-chain
-* `UNKNOWN` - The transaction was not received
+- `PENDING` - The transaction was received and is currently being submitted to miners
+- `INCLUDED` - The transaction was included on-chain
+- `FAILED` - The transaction was submitted for 25 blocks and failed to be included on-chain
+- `CANCELLED` - The transaction was cancelled by the user and not included on-chain
+- `UNKNOWN` - The transaction was not received
 
 ## Typescript Library
 
 ```typescript
-
 // @see {@link https://github.com/manifoldfinance/libsushi/blob/master/src/SushiGuard/index.ts}
 /**
  * @package OpenMevTxState
