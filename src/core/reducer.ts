@@ -36,7 +36,7 @@ export interface TransactionDetails {
   };
 }
 
-type txHash = string;
+export type txHash = string;
 
 export type TransactionState = { [key in ChainId]?: Record<txHash, TransactionDetails> };
 

@@ -11,7 +11,8 @@ import { JsonRpcResponse } from '../jsonrpc';
  * - OK -> Relay received the Tx && all downstream miners accepted without complains && tx mined successfully
  * - INDETERMINATE -> Relay received correctly the Tx && at least one miner accepted the TX && TX potentially mineable
  * - ERROR -> Relay haven't received the TX || none of the miners accepted the Tx || Tx was not mined successfully
- *
+ */
+
 /**
  * 
  *
@@ -30,7 +31,6 @@ export enum PrivateTxState {
 export type RelayResponses = Record<string, RelayResponse>;
 
 /**
- *
  * @export
  * @interface RelayResponse
  */
@@ -40,7 +40,6 @@ export interface RelayResponse {
 }
 
 /**
- *
  * @export
  * @interface PrivateTxStatus
  */
@@ -53,12 +52,10 @@ export interface PrivateTxStatus {
   relayResponses?: RelayResponses;
 }
 /**
- *
- *
- * @export
+ * @export 
  * @param {*} privateTx
  * @return {*}
  */
 export function privateTx(privateTx: any): any {
-  throw new Error('[#sushiguard]: Function Error.');
+  throw new Error('[#SecureRpc]: Function Error.');
 }

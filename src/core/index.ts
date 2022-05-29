@@ -1,6 +1,5 @@
 export * from './ChainId';
 export * from './actions';
-//export * from './barrel';
 export * from './isTransactionState';
 export * from './privateTransaction';
 import * as Reducer from './reducer';

@@ -2,20 +2,18 @@
   "compilerOptions": {
     "allowSyntheticDefaultImports": false,
     "declaration": true,
+    "declarationMap": true,
     "forceConsistentCasingInFileNames": true,
     "esModuleInterop": false,
-    "jsx": "react",
     "module": "esnext",
     "moduleResolution": "node",
-    "outDir": "./lib",
     "skipLibCheck": true,
     "strict": true,
     "target": "es2020",
     "lib": [
       "dom",
       "dom.iterable",
-      "es2020",
-      "esnext"
+      "es2020"
     ],
     "noImplicitAny": true,
     "removeComments": true,
@@ -23,10 +21,13 @@
     "importHelpers": true,
     "downlevelIteration": true,
     "preserveConstEnums": true,
+    "preserveValueImports": true,
+    "allowUnreachableCode": false,
+    "strictFunctionTypes": true, 
     "rootDir": "./src",
+    "outDir": "./lib",
     "sourceMap": true
   },
-  "include": [
-    "src/**/*.ts"
-  ]
+  "include": ["src/**/*.ts", "ethereum.d.ts"],
+  "exclude": ["**/node_modules", "**/.*/"]
 }
