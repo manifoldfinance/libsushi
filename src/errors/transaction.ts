@@ -307,6 +307,7 @@ export const getTransactionError = async (
   let rawMessageData: string;
   try {
     const result = await provider.call(
+      // @ts-expect-error
       {
         ...tx,
       },
@@ -345,8 +346,8 @@ export const getTransactionError = async (
 
 /**
  * @export parseReasonCode
- * @param messageData 
- * @returns 
+ * @param messageData
+ * @returns
  */
 export const parseReasonCode = (messageData: string): string => {
   // Get the length of the revert reason
