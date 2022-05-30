@@ -9,9 +9,15 @@
     "target": "ES2020",
     "rootDir": "./src",
     "outDir": "dist",
+    "allowUnreachableCode": false,
+    "strictPropertyInitialization": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "isolatedModules": true,
     "importHelpers": true,
     "downlevelIteration": true,
     "preserveConstEnums": true,
+    "noFallthroughCasesInSwitch": true,
     "plugins": [
       {
         "name": "typescript-eslint-language-service"
