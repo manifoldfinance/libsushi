@@ -1,15 +1,3 @@
-/**
- * @file JsonRpc
- * @version 0.3.0
- * @license Apache-2.0
- *
- */
-
-/**
- * JsonRpcRequest
- * @export
- * @interface JsonRpcRequest
- */
 export interface JsonRpcRequest {
   jsonrpc: '2.0';
   id: number | string | null;
@@ -82,7 +70,6 @@ export function fetchJsonRpc<T>(
 
     // handle successful response
     return res.json();
-    console.log(res.json);
   });
 }
 
