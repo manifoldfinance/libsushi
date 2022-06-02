@@ -4,12 +4,32 @@
  * @license GPL-3.0-Only
  * @see {@link https://docs.manifoldfinance.com}
  * @since 2022.03
- * @version 0.1.0
+ * @latest 2022.06
+ * @version 0.2.0
  *
  */
 
 import { PrivateTxState } from './privateTransaction';
 import { TransactionDetails } from './reducer';
+
+/**
+ * Specifies a block.  Can be given by number, or can be given via the
+ * special strings "genesis", "latest", or "pending".
+ *
+ * Intended to work like Web3's
+ * [BlockType](https://web3js.readthedocs.io/en/v1.2.1/web3-eth.html#id14).
+ *
+ * *Warning*: Using "pending", while allowed, is not advised, as it may lead
+ * to internally inconsistent results.  Use of "latest" is safe and will not
+ * lead to inconsistent results. Depending on the backing RPC networks caching system,
+ * the usage of `pending` may lead to inconsistencies as a result of an 
+ * overly aggressive cache system. This may cause downstream errors/invalid states.
+ *
+ * @category Inputs
+ */
+export type BlockSpecifier = number | "genesis" | "latest" | "pending" // TODO: Check BigInt usage of these numbers
+
+export type RegularizedBlockSpecifier = number | "pending";
 
 /**
  * @summary
