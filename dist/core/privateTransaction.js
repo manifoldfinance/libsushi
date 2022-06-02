@@ -1,4 +1,3 @@
-import { JsonRpcResponse } from '../jsonrpc';
 /**
  *   @enum PrivateTxState
   *  @interface PrivateTxStatus
@@ -17,37 +16,14 @@ import { JsonRpcResponse } from '../jsonrpc';
  * @export
  * @enum {number}
  */
-export declare enum PrivateTxState {
-    UNCHECKED = "UNCHECKED",
-    PROCESSING = "PROCESSING",
-    OK = "OK",
-    INDETERMINATE = "INDETERMINATE",
-    ERROR = "ERROR"
-}
-/** @type RelayResponses  */
-export declare type RelayResponses = Record<string, RelayResponse>;
-/**
- *
- * @export
- * @interface RelayResponse
- */
-export interface RelayResponse {
-    response: JsonRpcResponse<any>;
-    error?: string;
-}
-/**
- *
- * @export
- * @interface PrivateTxStatus
- */
-export interface PrivateTxStatus {
-    transactionHash: string;
-    receivedAt: string;
-    relayedAt?: string;
-    minedAt?: string;
-    relayFailure?: boolean;
-    relayResponses?: RelayResponses;
-}
+export var PrivateTxState;
+(function (PrivateTxState) {
+    PrivateTxState["UNCHECKED"] = "UNCHECKED";
+    PrivateTxState["PROCESSING"] = "PROCESSING";
+    PrivateTxState["OK"] = "OK";
+    PrivateTxState["INDETERMINATE"] = "INDETERMINATE";
+    PrivateTxState["ERROR"] = "ERROR";
+})(PrivateTxState || (PrivateTxState = {}));
 /**
  *
  *
@@ -55,4 +31,6 @@ export interface PrivateTxStatus {
  * @param {*} privateTx
  * @return {*}
  */
-export declare function privateTx(privateTx: any): any;
+export function privateTx(privateTx) {
+    throw new Error('[#sushiguard]: Function Error.');
+}

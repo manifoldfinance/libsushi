@@ -1,14 +1,3 @@
-/**
- * @file JsonRpc
- * @version 0.3.0
- * @license Apache-2.0
- *
- */
-/**
- * JsonRpcRequest
- * @export
- * @interface JsonRpcRequest
- */
 export interface JsonRpcRequest {
     jsonrpc: '2.0';
     id: number | string | null;
@@ -51,9 +40,9 @@ export interface JsonRpcPayload {
  * @extends {Error}
  */
 export declare class HttpJsonRpcError extends Error {
-    req?: JsonRpcRequest;
-    res?: Response;
-    constructor(message: string, req?: JsonRpcRequest, res?: Response);
+    req?: JsonRpcRequest | undefined;
+    res?: Response | undefined;
+    constructor(message: string, req?: JsonRpcRequest | undefined, res?: Response | undefined);
 }
 /**
  * @export

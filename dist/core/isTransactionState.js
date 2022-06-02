@@ -7,7 +7,7 @@
  * @version 0.1.0
  *
  */
-import { TransactionDetails } from './reducer';
+import { PrivateTxState } from './privateTransaction';
 /**
  * @summary
  * Basic explanation of the tx state types:
@@ -23,28 +23,46 @@ import { TransactionDetails } from './reducer';
  * @param {TransactionDetails} [tx]
  * @return {boolean}
  */
-export declare function isTxPending(tx?: TransactionDetails): boolean;
+export function isTxPending(tx) {
+    if (!tx?.privateTx)
+        return !tx?.receipt;
+    return tx?.privateTx?.state === PrivateTxState.UNCHECKED || tx?.privateTx?.state === PrivateTxState.PROCESSING;
+}
 /**
  *
  * @export
  * @param {TransactionDetails} [tx]
  * @return {boolean}
  */
-export declare function isTxSuccessful(tx?: TransactionDetails): boolean;
+export function isTxSuccessful(tx) {
+    if (!tx?.privateTx)
+        return !!tx && (tx.receipt?.status === 1 || typeof tx.receipt?.status === 'undefined');
+    return (tx?.privateTx?.state === PrivateTxState.OK &&
+        !!tx &&
+        (tx.receipt?.status === 1 || typeof tx.receipt?.status === 'undefined'));
+}
 /**
  *
  * @export
  * @param {TransactionDetails} [tx]
  * @return {boolean}
  */
-export declare function isTxIndeterminate(tx?: TransactionDetails): boolean;
+export function isTxIndeterminate(tx) {
+    if (!tx?.privateTx)
+        return false;
+    return tx?.privateTx?.state === PrivateTxState.INDETERMINATE;
+}
 /**
  *
  * @export
  * @param {TransactionDetails} [tx]
  * @return {number}
  */
-export declare function txMinutesPending(tx?: TransactionDetails): number;
+export function txMinutesPending(tx) {
+    if (!tx)
+        return 0;
+    return (new Date().getTime() - tx.addedTime) / 1000 / 60;
+}
 /**
  *
  *
@@ -52,4 +70,8 @@ export declare function txMinutesPending(tx?: TransactionDetails): number;
  * @param {TransactionDetails} [tx]
  * @return {boolean}
  */
-export declare function isTxExpired(tx?: TransactionDetails): boolean;
+export function isTxExpired(tx) {
+    if (!tx)
+        return false;
+    return txMinutesPending(tx) > 60;
+}

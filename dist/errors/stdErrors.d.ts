@@ -1,6 +1,6 @@
 /**
 @export stderrors
-@note github.com/WalletConnect/walletconnect-utils/blob/master/jsonrpc/utils/src/constants.ts
+github.com/WalletConnect/walletconnect-utils/blob/master/jsonrpc/utils/src/constants.ts
 */
 export declare const PARSE_ERROR = "PARSE_ERROR";
 export declare const INVALID_REQUEST = "INVALID_REQUEST";

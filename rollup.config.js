@@ -40,7 +40,7 @@ export default [
       {
         //        file: `dist/index.mjs`,
         file: pkg.module,
-        exports: 'named',
+//        exports: 'named',
         format: 'esm',
         sourcemap: true,
       },

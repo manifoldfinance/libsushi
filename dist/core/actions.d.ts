@@ -14,33 +14,33 @@ export interface SerializableTransactionReceipt {
     blockNumber: number;
     status?: number;
 }
-export declare const addTransaction: import("@reduxjs/toolkit").ActionCreatorWithOptionalPayload<{
+export declare const addTransaction: import("@reduxjs/toolkit").ActionCreatorWithPayload<{
     chainId: ChainId;
     hash: string;
     from: string;
     approval?: {
         tokenAddress: string;
         spender: string;
-    };
+    } | undefined;
     claim?: {
         recipient: string;
-    };
-    summary?: string;
+    } | undefined;
+    summary?: string | undefined;
 }, string>;
-export declare const clearAllTransactions: import("@reduxjs/toolkit").ActionCreatorWithOptionalPayload<{
+export declare const clearAllTransactions: import("@reduxjs/toolkit").ActionCreatorWithPayload<{
     chainId: ChainId;
 }, string>;
-export declare const finalizeTransaction: import("@reduxjs/toolkit").ActionCreatorWithOptionalPayload<{
+export declare const finalizeTransaction: import("@reduxjs/toolkit").ActionCreatorWithPayload<{
     chainId: ChainId;
     hash: string;
     receipt: SerializableTransactionReceipt;
 }, string>;
-export declare const checkedTransaction: import("@reduxjs/toolkit").ActionCreatorWithOptionalPayload<{
+export declare const checkedTransaction: import("@reduxjs/toolkit").ActionCreatorWithPayload<{
     chainId: ChainId;
     hash: string;
     blockNumber: number;
 }, string>;
-export declare const updatePrivateTxStatus: import("@reduxjs/toolkit").ActionCreatorWithOptionalPayload<{
+export declare const updatePrivateTxStatus: import("@reduxjs/toolkit").ActionCreatorWithPayload<{
     chainId: ChainId;
     hash: string;
     status: PrivateTxStatus;
