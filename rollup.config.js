@@ -52,4 +52,4 @@ export default [
       file: `dist/index.d.ts`,
       format: 'es',
     },
-  })];
+})];
