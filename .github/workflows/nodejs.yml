@@ -57,7 +57,7 @@ jobs:
         id: build
 
       - name: Pack
-        run: npm run pack
+        run: npm pack
       - name: Check packed js changes
         id: packedJsStatus
         run: echo ::set-output name=changes::$(git status ${{ env.PACKED_JS_PATH }} --porcelain)
@@ -66,8 +66,8 @@ jobs:
         id: commitPackedJs
         if: steps.packedJsStatus.outputs.changes
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config --local user.email "janitor@manifoldfinance.com"
+          git config --local user.name "0xJanitor"
           git add ${{ env.PACKED_JS_PATH }}
           git commit -m "Pack with dependencies to ${{ env.PACKED_JS_PATH }}"
 
