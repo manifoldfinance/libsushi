@@ -290,6 +290,21 @@ declare namespace reducer {
  */
 
 /**
+
+@NOTE Eth2 Changes Below
+
+```markdown
+| Block Tags |  Description  |
+|---|---|
+| earliest |  The lowest numbered block the client has available  |
+| finalized |  The most recent crypto-economically secure block  cannot be re-orged outside of manual intervention driven by community coordination |
+| safe |  The most recent block that is safe from re-orgs under honest majority and certain synchronicity assumptions  |
+| unsafe |  The most recent block in the canonical chain observed by the client this block can be re-orged out of the canonical chain |
+| pending |  A sample next block built by the client on top of unsafe and containing the set of transactions usually taken from local mempool  |
+| latest |  DEPRECATED Currently an alias for unsafe will be removed at some point in the future |
+```
+*/
+/**
  * @export BlockSpecifier
  * @summary Specifies a block.  Can be given by number, or can be given via the
  *     special strings "genesis", "latest", or "pending".
