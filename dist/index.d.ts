@@ -3,22 +3,18 @@ import * as _reduxjs_toolkit_dist_createReducer from '@reduxjs/toolkit/dist/crea
 import { TransactionReceipt, Provider } from '@ethersproject/providers';
 import { TransactionResponse } from '@ethersproject/abstract-provider';
 
-/** @export ChainId */
 declare enum ChainId {
-    MAINNET = "1"
+    MAINNET = "1",
+    OPENMEV = "73300705280",
+    GORELI = "5"
 }
+declare let OPENMEV_SUPPORTED_NETWORKS: ChainId[];
+declare enum OPENMEV_METAMASK_CHAIN_ID {
+    MAINNET = "0x1"
+}
+declare const OPENMEV_METAMASK_SUPPORTED_NETWORKS: OPENMEV_METAMASK_CHAIN_ID[];
+declare const MAINNET_RPC_URL: string;
 
-/**
- * @file JsonRpc
- * @version 0.3.0
- * @license Apache-2.0
- *
- */
-/**
- * JsonRpcRequest
- * @export
- * @interface JsonRpcRequest
- */
 interface JsonRpcRequest {
     jsonrpc: '2.0';
     id: number | string | null;
@@ -61,9 +57,9 @@ interface JsonRpcPayload {
  * @extends {Error}
  */
 declare class HttpJsonRpcError extends Error {
-    req?: JsonRpcRequest;
-    res?: Response;
-    constructor(message: string, req?: JsonRpcRequest, res?: Response);
+    req?: JsonRpcRequest | undefined;
+    res?: Response | undefined;
+    constructor(message: string, req?: JsonRpcRequest | undefined, res?: Response | undefined);
 }
 /**
  * @export
@@ -187,33 +183,33 @@ interface SerializableTransactionReceipt {
     blockNumber: number;
     status?: number;
 }
-declare const addTransaction: _reduxjs_toolkit.ActionCreatorWithOptionalPayload<{
+declare const addTransaction: _reduxjs_toolkit.ActionCreatorWithPayload<{
     chainId: ChainId;
     hash: string;
     from: string;
     approval?: {
         tokenAddress: string;
         spender: string;
-    };
+    } | undefined;
     claim?: {
         recipient: string;
-    };
-    summary?: string;
+    } | undefined;
+    summary?: string | undefined;
 }, string>;
-declare const clearAllTransactions: _reduxjs_toolkit.ActionCreatorWithOptionalPayload<{
+declare const clearAllTransactions: _reduxjs_toolkit.ActionCreatorWithPayload<{
     chainId: ChainId;
 }, string>;
-declare const finalizeTransaction: _reduxjs_toolkit.ActionCreatorWithOptionalPayload<{
+declare const finalizeTransaction: _reduxjs_toolkit.ActionCreatorWithPayload<{
     chainId: ChainId;
     hash: string;
     receipt: SerializableTransactionReceipt;
 }, string>;
-declare const checkedTransaction: _reduxjs_toolkit.ActionCreatorWithOptionalPayload<{
+declare const checkedTransaction: _reduxjs_toolkit.ActionCreatorWithPayload<{
     chainId: ChainId;
     hash: string;
     blockNumber: number;
 }, string>;
-declare const updatePrivateTxStatus: _reduxjs_toolkit.ActionCreatorWithOptionalPayload<{
+declare const updatePrivateTxStatus: _reduxjs_toolkit.ActionCreatorWithPayload<{
     chainId: ChainId;
     hash: string;
     status: PrivateTxStatus;
@@ -288,10 +284,27 @@ declare namespace reducer {
  * @license GPL-3.0-Only
  * @see {@link https://docs.manifoldfinance.com}
  * @since 2022.03
- * @version 0.1.0
+ * @latest 2022.06
+ * @version 0.2.0
  *
  */
 
+/**
+ * @export BlockSpecifier
+ * @summary Specifies a block.  Can be given by number, or can be given via the
+ *     special strings "genesis", "latest", or "pending".
+ *
+ * @warning Using `pending`, while allowed, is not advised, as it may lead
+ * to internally inconsistent results.  Use of `latest` is safe and will not
+ * lead to inconsistent results. Depending on the backing RPC networks caching system,
+ * the usage of `pending` may lead to inconsistencies as a result of an
+ * overly aggressive cache system. This may cause downstream errors/invalid states.
+ *
+ * @category Inputs
+ */
+declare type BlockSpecifier = number | "genesis" | "latest" | "pending";
+/** @export RegularizedBlockSpecifier */
+declare type RegularizedBlockSpecifier = number | "pending";
 /**
  * @summary
  * Basic explanation of the tx state types:
@@ -419,7 +432,217 @@ declare class ResourceUnavailableError extends RpcError {
     constructor(error: unknown);
 }
 
+declare type ErrorSignature = {
+    r: string;
+    s: string;
+    yParity: 0 | 1;
+    networkV: bigint;
+};
+declare type ErrorAccessList = Array<{
+    address: string;
+    storageKeys: Array<string>;
+}>;
+interface ErrorTransaction {
+    type?: number;
+    to?: string;
+    from?: string;
+    nonce?: number;
+    gasLimit?: bigint;
+    gasPrice?: bigint;
+    maxPriorityFeePerGas?: bigint;
+    maxFeePerGas?: bigint;
+    data?: string;
+    value?: bigint;
+    chainId?: bigint;
+    hash?: string;
+    signature?: ErrorSignature;
+    accessList?: ErrorAccessList;
+}
+interface ErrorFetchRequestWithBody extends ErrorFetchRequest {
+    body: Readonly<Uint8Array>;
+}
+interface ErrorFetchRequest {
+    url: string;
+    method: string;
+    headers: Readonly<Record<string, string>>;
+    getHeader(key: string): string;
+    body: null | Readonly<Uint8Array>;
+    hasBody(): this is ErrorFetchRequestWithBody;
+}
+interface ErrorFetchResponseWithBody extends ErrorFetchResponse {
+    body: Readonly<Uint8Array>;
+}
+interface ErrorFetchResponse {
+    statusCode: number;
+    statusMessage: string;
+    headers: Readonly<Record<string, string>>;
+    getHeader(key: string): string;
+    body: null | Readonly<Uint8Array>;
+    hasBody(): this is ErrorFetchResponseWithBody;
+}
+/**
+ * @export ErrorCode
+ * @summary EthersJs ErrorCode
+ */
+declare type ErrorCode = 'UNKNOWN_ERROR' | 'NOT_IMPLEMENTED' | 'UNSUPPORTED_OPERATION' | 'NETWORK_ERROR' | 'SERVER_ERROR' | 'TIMEOUT' | 'BAD_DATA' | 'BUFFER_OVERRUN' | 'NUMERIC_FAULT' | 'INVALID_ARGUMENT' | 'MISSING_ARGUMENT' | 'UNEXPECTED_ARGUMENT' | 'VALUE_MISMATCH' | 'CALL_EXCEPTION' | 'INSUFFICIENT_FUNDS' | 'NONCE_EXPIRED' | 'REPLACEMENT_UNDERPRICED' | 'TRANSACTION_REPLACED' | 'UNPREDICTABLE_GAS_LIMIT' | 'UNCONFIGURED_NAME' | 'OFFCHAIN_FAULT';
+interface EthersError<T extends ErrorCode = ErrorCode> extends Error {
+    code: ErrorCode;
+    info?: Record<string, any>;
+    error?: Error;
+}
+interface UnknownError extends EthersError<'UNKNOWN_ERROR'> {
+    [key: string]: any;
+}
+interface NotImplementedError extends EthersError<'NOT_IMPLEMENTED'> {
+    operation: string;
+}
+interface UnsupportedOperationError extends EthersError<'UNSUPPORTED_OPERATION'> {
+    operation: string;
+}
+interface NetworkError extends EthersError<'NETWORK_ERROR'> {
+    event: string;
+}
+interface ServerError extends EthersError<'SERVER_ERROR'> {
+    request: ErrorFetchRequest | string;
+    response?: ErrorFetchResponse;
+}
+interface TimeoutError extends EthersError<'TIMEOUT'> {
+    operation: string;
+    reason: string;
+    request?: ErrorFetchRequest;
+}
+interface BadDataError extends EthersError<'BAD_DATA'> {
+    value: any;
+}
+interface BufferOverrunError extends EthersError<'BUFFER_OVERRUN'> {
+    buffer: Uint8Array;
+    length: number;
+    offset: number;
+}
+interface NumericFaultError extends EthersError<'NUMERIC_FAULT'> {
+    operation: string;
+    fault: string;
+    value: any;
+}
+interface InvalidArgumentError extends EthersError<'INVALID_ARGUMENT'> {
+    argument: string;
+    value: any;
+    info?: Record<string, any>;
+}
+interface MissingArgumentError extends EthersError<'MISSING_ARGUMENT'> {
+    count: number;
+    expectedCount: number;
+}
+interface UnexpectedArgumentError extends EthersError<'UNEXPECTED_ARGUMENT'> {
+    count: number;
+    expectedCount: number;
+}
+interface CallExceptionError extends EthersError<'CALL_EXCEPTION'> {
+    data: string;
+    transaction?: any;
+    method?: string;
+    signature?: string;
+    args?: ReadonlyArray<any>;
+    errorSignature?: string;
+    errorName?: string;
+    errorArgs?: ReadonlyArray<any>;
+    reason?: string;
+}
+interface InsufficientFundsError extends EthersError<'INSUFFICIENT_FUNDS'> {
+    transaction: any;
+}
+interface NonceExpiredError extends EthersError<'NONCE_EXPIRED'> {
+    transaction: any;
+}
+interface OffchainFaultError extends EthersError<'OFFCHAIN_FAULT'> {
+    transaction?: any;
+    reason: string;
+}
+interface ReplacementUnderpricedError extends EthersError<'REPLACEMENT_UNDERPRICED'> {
+    transaction: any;
+}
+interface TransactionReplacedError extends EthersError<'TRANSACTION_REPLACED'> {
+    cancelled: boolean;
+    reason: 'repriced' | 'cancelled' | 'replaced';
+    hash: string;
+    replacement: any;
+    receipt: any;
+}
+interface UnconfiguredNameError extends EthersError<'UNCONFIGURED_NAME'> {
+    value: string;
+}
+interface UnpredictableGasLimitError extends EthersError<'UNPREDICTABLE_GAS_LIMIT'> {
+    transaction: any;
+}
+/**
+ * @export CodedEthersError
+ */
+declare type CodedEthersError<T> = T extends "UNKNOWN_ERROR" ? UnknownError : T extends "NOT_IMPLEMENTED" ? NotImplementedError : T extends "UNSUPPORTED_OPERATION" ? UnsupportedOperationError : T extends "NETWORK_ERROR" ? NetworkError : T extends "SERVER_ERROR" ? ServerError : T extends "TIMEOUT" ? TimeoutError : T extends "BAD_DATA" ? BadDataError : T extends "BUFFER_OVERRUN" ? BufferOverrunError : T extends "NUMERIC_FAULT" ? NumericFaultError : T extends "INVALID_ARGUMENT" ? InvalidArgumentError : T extends "MISSING_ARGUMENT" ? MissingArgumentError : T extends "UNEXPECTED_ARGUMENT" ? UnexpectedArgumentError : T extends "CALL_EXCEPTION" ? CallExceptionError : T extends "INSUFFICIENT_FUNDS" ? InsufficientFundsError : T extends "NONCE_EXPIRED" ? NonceExpiredError : T extends "OFFCHAIN_FAULT" ? OffchainFaultError : T extends "REPLACEMENT_UNDERPRICED" ? ReplacementUnderpricedError : T extends "TRANSACTION_REPLACED" ? TransactionReplacedError : T extends "UNCONFIGURED_NAME" ? UnconfiguredNameError : T extends "UNPREDICTABLE_GAS_LIMIT" ? UnpredictableGasLimitError : never;
+/**
+ * #isError
+ * @param error
+ * @param code
+ * @returns
+ */
+declare function isError<K extends ErrorCode, T extends CodedEthersError<K>>(error: any, code: K): error is T;
+/**
+ * #isCallException
+ * @param error
+ * @returns
+ */
+declare function isCallException(error: any): error is CallExceptionError;
+/**
+ * #getTransactionError
+ * @param tx
+ * @param receipt
+ * @param provider
+ * @returns
+ */
 declare const getTransactionError: (tx: TransactionResponse, receipt: TransactionReceipt, provider: Provider) => Promise<string>;
+/**
+ * @export parseReasonCode
+ * @param messageData
+ * @returns
+ */
 declare const parseReasonCode: (messageData: string) => string;
 
-export { AddChainError, AddressZero, BURN_ADDRESS, ChainId, ChainNotConfiguredError, ConnectorAlreadyConnectedError, ConnectorNotFoundError, DeadAddress, EIP191_PREFIX_FOR_EIP712_STRUCTURED_DATA, HttpJsonRpcError, IJsonRpcError, IJsonRpcRequest, IJsonRpcResponse, IJsonRpcSuccess, JsonRpcError, JsonRpcMethod, JsonRpcPayload, JsonRpcRequest, JsonRpcResponse, privateTransaction as PrivateTransaction, PrivateTxState, PrivateTxStatus, ProviderRpcError, reducer as Reducer, RelayResponse, RelayResponses, ResourceUnavailableError, RpcError, SerializableTransactionReceipt, SwitchChainError, SwitchChainNotSupportedError, TransactionDetails$1 as TransactionDetails, UserRejectedRequestError, addTransaction, checkedTransaction, clearAllTransactions, fetchJsonRpc, finalizeTransaction, getTransactionError, isJsonRpcError, isJsonRpcSuccess, isTxExpired, isTxIndeterminate, isTxPending, isTxSuccessful, parseReasonCode, privateTx, txMinutesPending, updatePrivateTxStatus, validateJsonRpcResponse };
+/**
+@export stderrors
+github.com/WalletConnect/walletconnect-utils/blob/master/jsonrpc/utils/src/constants.ts
+*/
+declare const PARSE_ERROR = "PARSE_ERROR";
+declare const INVALID_REQUEST = "INVALID_REQUEST";
+declare const METHOD_NOT_FOUND = "METHOD_NOT_FOUND";
+declare const INVALID_PARAMS = "INVALID_PARAMS";
+declare const INTERNAL_ERROR = "INTERNAL_ERROR";
+declare const SERVER_ERROR = "SERVER_ERROR";
+declare const RESERVED_ERROR_CODES: number[];
+declare const SERVER_ERROR_CODE_RANGE: number[];
+declare const STANDARD_ERROR_MAP: {
+    PARSE_ERROR: {
+        code: number;
+        message: string;
+    };
+    INVALID_REQUEST: {
+        code: number;
+        message: string;
+    };
+    METHOD_NOT_FOUND: {
+        code: number;
+        message: string;
+    };
+    INVALID_PARAMS: {
+        code: number;
+        message: string;
+    };
+    INTERNAL_ERROR: {
+        code: number;
+        message: string;
+    };
+    SERVER_ERROR: {
+        code: number;
+        message: string;
+    };
+};
+
+export { AddChainError, AddressZero, BURN_ADDRESS, BadDataError, BlockSpecifier, BufferOverrunError, CallExceptionError, ChainId, ChainNotConfiguredError, CodedEthersError, ConnectorAlreadyConnectedError, ConnectorNotFoundError, DeadAddress, EIP191_PREFIX_FOR_EIP712_STRUCTURED_DATA, ErrorAccessList, ErrorCode, ErrorFetchRequest, ErrorFetchRequestWithBody, ErrorFetchResponse, ErrorFetchResponseWithBody, ErrorSignature, ErrorTransaction, EthersError, HttpJsonRpcError, IJsonRpcError, IJsonRpcRequest, IJsonRpcResponse, IJsonRpcSuccess, INTERNAL_ERROR, INVALID_PARAMS, INVALID_REQUEST, InsufficientFundsError, InvalidArgumentError, JsonRpcError, JsonRpcMethod, JsonRpcPayload, JsonRpcRequest, JsonRpcResponse, MAINNET_RPC_URL, METHOD_NOT_FOUND, MissingArgumentError, NetworkError, NonceExpiredError, NotImplementedError, NumericFaultError, OPENMEV_METAMASK_CHAIN_ID, OPENMEV_METAMASK_SUPPORTED_NETWORKS, OPENMEV_SUPPORTED_NETWORKS, OffchainFaultError, PARSE_ERROR, privateTransaction as PrivateTransaction, PrivateTxState, PrivateTxStatus, ProviderRpcError, RESERVED_ERROR_CODES, reducer as Reducer, RegularizedBlockSpecifier, RelayResponse, RelayResponses, ReplacementUnderpricedError, ResourceUnavailableError, RpcError, SERVER_ERROR, SERVER_ERROR_CODE_RANGE, STANDARD_ERROR_MAP, SerializableTransactionReceipt, ServerError, SwitchChainError, SwitchChainNotSupportedError, TimeoutError, TransactionDetails$1 as TransactionDetails, TransactionReplacedError, UnconfiguredNameError, UnexpectedArgumentError, UnknownError, UnpredictableGasLimitError, UnsupportedOperationError, UserRejectedRequestError, addTransaction, checkedTransaction, clearAllTransactions, fetchJsonRpc, finalizeTransaction, getTransactionError, isCallException, isError, isJsonRpcError, isJsonRpcSuccess, isTxExpired, isTxIndeterminate, isTxPending, isTxSuccessful, parseReasonCode, privateTx, txMinutesPending, updatePrivateTxStatus, validateJsonRpcResponse };
