@@ -1,0 +1,5052 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.24.2",
+    "schemaVersion": 1005,
+    "oldestForwardsCompatibleVersion": 1001,
+    "tsdocConfig": {
+      "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
+      "noStandardTags": true,
+      "tagDefinitions": [
+        {
+          "tagName": "@alpha",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@beta",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@defaultValue",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@decorator",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@deprecated",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@eventProperty",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@example",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@experimental",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@inheritDoc",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@internal",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@label",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@link",
+          "syntaxKind": "inline",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@override",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@packageDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@param",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@privateRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@public",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@readonly",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@remarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@returns",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@sealed",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@see",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@throws",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@typeParam",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@virtual",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@betaDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@internalRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@preapproved",
+          "syntaxKind": "modifier"
+        }
+      ],
+      "supportForTags": {
+        "@alpha": true,
+        "@beta": true,
+        "@defaultValue": true,
+        "@decorator": true,
+        "@deprecated": true,
+        "@eventProperty": true,
+        "@example": true,
+        "@experimental": true,
+        "@inheritDoc": true,
+        "@internal": true,
+        "@label": true,
+        "@link": true,
+        "@override": true,
+        "@packageDocumentation": true,
+        "@param": true,
+        "@privateRemarks": true,
+        "@public": true,
+        "@readonly": true,
+        "@remarks": true,
+        "@returns": true,
+        "@sealed": true,
+        "@see": true,
+        "@throws": true,
+        "@typeParam": true,
+        "@virtual": true,
+        "@betaDocumentation": true,
+        "@internalRemarks": true,
+        "@preapproved": true
+      },
+      "reportUnsupportedHtmlElements": false
+    }
+  },
+  "kind": "Package",
+  "canonicalReference": "libsushi!",
+  "docComment": "",
+  "name": "libsushi",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "libsushi!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Class",
+          "canonicalReference": "libsushi!AddChainError:class",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class AddChainError extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "Error",
+              "canonicalReference": "!Error:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "AddChainError",
+          "members": [
+            {
+              "kind": "Property",
+              "canonicalReference": "libsushi!AddChainError#message:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "message: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "message",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "libsushi!AddChainError#name:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "name: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "name",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          },
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "libsushi!AddressZero:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "AddressZero = \"0x0000000000000000000000000000000000000000\""
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "AddressZero",
+          "variableTypeTokenRange": {
+            "startIndex": 0,
+            "endIndex": 0
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "libsushi!addTransaction:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "addTransaction: "
+            },
+            {
+              "kind": "Content",
+              "text": "import(\"@reduxjs/toolkit\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "ActionCreatorWithOptionalPayload",
+              "canonicalReference": "@reduxjs/toolkit!ActionCreatorWithOptionalPayload:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<{\n    chainId: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ChainId",
+              "canonicalReference": "libsushi!ChainId:enum"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    hash: string;\n    from: string;\n    approval?: {\n        tokenAddress: string;\n        spender: string;\n    };\n    claim?: {\n        recipient: string;\n    };\n    summary?: string;\n}, string>"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "addTransaction",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "libsushi!BURN_ADDRESS:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "BURN_ADDRESS = 57005"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "BURN_ADDRESS",
+          "variableTypeTokenRange": {
+            "startIndex": 0,
+            "endIndex": 0
+          }
+        },
+        {
+          "kind": "Enum",
+          "canonicalReference": "libsushi!ChainId:enum",
+          "docComment": "/**\n * @export ChainId\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare enum ChainId "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ChainId",
+          "members": [
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "libsushi!ChainId.MAINNET:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "MAINNET = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"1\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "MAINNET",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ]
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "libsushi!ChainNotConfiguredError:class",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class ChainNotConfiguredError extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "Error",
+              "canonicalReference": "!Error:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ChainNotConfiguredError",
+          "members": [
+            {
+              "kind": "Property",
+              "canonicalReference": "libsushi!ChainNotConfiguredError#message:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "message: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "message",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "libsushi!ChainNotConfiguredError#name:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "name: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "name",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          },
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "libsushi!checkedTransaction:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "checkedTransaction: "
+            },
+            {
+              "kind": "Content",
+              "text": "import(\"@reduxjs/toolkit\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "ActionCreatorWithOptionalPayload",
+              "canonicalReference": "@reduxjs/toolkit!ActionCreatorWithOptionalPayload:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<{\n    chainId: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ChainId",
+              "canonicalReference": "libsushi!ChainId:enum"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    hash: string;\n    blockNumber: number;\n}, string>"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "checkedTransaction",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "libsushi!clearAllTransactions:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "clearAllTransactions: "
+            },
+            {
+              "kind": "Content",
+              "text": "import(\"@reduxjs/toolkit\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "ActionCreatorWithOptionalPayload",
+              "canonicalReference": "@reduxjs/toolkit!ActionCreatorWithOptionalPayload:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<{\n    chainId: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ChainId",
+              "canonicalReference": "libsushi!ChainId:enum"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n}, string>"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "clearAllTransactions",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "libsushi!ConnectorAlreadyConnectedError:class",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class ConnectorAlreadyConnectedError extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "Error",
+              "canonicalReference": "!Error:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ConnectorAlreadyConnectedError",
+          "members": [
+            {
+              "kind": "Property",
+              "canonicalReference": "libsushi!ConnectorAlreadyConnectedError#message:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "message: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "message",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "libsushi!ConnectorAlreadyConnectedError#name:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "name: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "name",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          },
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "libsushi!ConnectorNotFoundError:class",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class ConnectorNotFoundError extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "Error",
+              "canonicalReference": "!Error:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ConnectorNotFoundError",
+          "members": [
+            {
+              "kind": "Property",
+              "canonicalReference": "libsushi!ConnectorNotFoundError#message:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "message: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "message",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "libsushi!ConnectorNotFoundError#name:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "name: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "name",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          },
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "libsushi!DeadAddress:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "DeadAddress = \"0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000\""
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "DeadAddress",
+          "variableTypeTokenRange": {
+            "startIndex": 0,
+            "endIndex": 0
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "libsushi!EIP191_PREFIX_FOR_EIP712_STRUCTURED_DATA:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "EIP191_PREFIX_FOR_EIP712_STRUCTURED_DATA = \"\\u0019\\u0001\""
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "EIP191_PREFIX_FOR_EIP712_STRUCTURED_DATA",
+          "variableTypeTokenRange": {
+            "startIndex": 0,
+            "endIndex": 0
+          }
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "libsushi!fetchJsonRpc:function(1)",
+          "docComment": "/**\n * @export  @template T\n *\n * @param url - \n *\n * @param  - {Partial<JsonRpcRequest>} {  @return {(Promise<JsonRpcResponse<JsonRpcError | T>>)}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function fetchJsonRpc<T>(url: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ", { jsonrpc, id, method, params }: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Partial",
+              "canonicalReference": "!Partial:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "JsonRpcRequest",
+              "canonicalReference": "libsushi!JsonRpcRequest:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "JsonRpcResponse",
+              "canonicalReference": "libsushi!JsonRpcResponse:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "JsonRpcError",
+              "canonicalReference": "libsushi!JsonRpcError:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " | T>>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 8,
+            "endIndex": 14
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "url",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "{ jsonrpc, id, method, params }",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "isOptional": false
+            }
+          ],
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "fetchJsonRpc"
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "libsushi!finalizeTransaction:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "finalizeTransaction: "
+            },
+            {
+              "kind": "Content",
+              "text": "import(\"@reduxjs/toolkit\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "ActionCreatorWithOptionalPayload",
+              "canonicalReference": "@reduxjs/toolkit!ActionCreatorWithOptionalPayload:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<{\n    chainId: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ChainId",
+              "canonicalReference": "libsushi!ChainId:enum"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    hash: string;\n    receipt: "
+            },
+            {
+              "kind": "Reference",
+              "text": "SerializableTransactionReceipt",
+              "canonicalReference": "libsushi!SerializableTransactionReceipt:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n}, string>"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "finalizeTransaction",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 8
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "libsushi!getTransactionError:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "getTransactionError: "
+            },
+            {
+              "kind": "Content",
+              "text": "(tx: "
+            },
+            {
+              "kind": "Reference",
+              "text": "TransactionResponse",
+              "canonicalReference": "@ethersproject/abstract-provider!TransactionResponse:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", receipt: "
+            },
+            {
+              "kind": "Reference",
+              "text": "TransactionReceipt",
+              "canonicalReference": "@ethersproject/abstract-provider!TransactionReceipt:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", provider: "
+            },
+            {
+              "kind": "Reference",
+              "text": "Provider",
+              "canonicalReference": "@ethersproject/abstract-provider!Provider:class"
+            },
+            {
+              "kind": "Content",
+              "text": ") => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<string>"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "getTransactionError",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 10
+          }
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "libsushi!HttpJsonRpcError:class",
+          "docComment": "/**\n * @export  @class HttpJsonRpcError  @extends {Error}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class HttpJsonRpcError extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "Error",
+              "canonicalReference": "!Error:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "HttpJsonRpcError",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "libsushi!HttpJsonRpcError:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `HttpJsonRpcError` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(message: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", req?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "JsonRpcRequest",
+                  "canonicalReference": "libsushi!JsonRpcRequest:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", res?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Response",
+                  "canonicalReference": "!Response:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "message",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "req",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": true
+                },
+                {
+                  "parameterName": "res",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": true
+                }
+              ]
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "libsushi!HttpJsonRpcError#req:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "req?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "JsonRpcRequest",
+                  "canonicalReference": "libsushi!JsonRpcRequest:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "req",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "libsushi!HttpJsonRpcError#res:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "res?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Response",
+                  "canonicalReference": "!Response:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "res",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          },
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "libsushi!IJsonRpcError:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IJsonRpcError "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IJsonRpcError",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!IJsonRpcError#error:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly error: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{\n        readonly code: number;\n        readonly message: string;\n        readonly data?: unknown;\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "error",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!IJsonRpcError#id:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly id: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string | number | null"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "id",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!IJsonRpcError#jsonrpc:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly jsonrpc: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "'2.0'"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "jsonrpc",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "libsushi!IJsonRpcRequest:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IJsonRpcRequest<TMethod extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "JsonRpcMethod",
+              "canonicalReference": "libsushi!JsonRpcMethod:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", TParams extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "Array",
+              "canonicalReference": "!Array:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<unknown>"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            }
+          ],
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "TMethod",
+              "constraintTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            },
+            {
+              "typeParameterName": "TParams",
+              "constraintTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "IJsonRpcRequest",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!IJsonRpcRequest#id:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly id: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string | number | null"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "id",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!IJsonRpcRequest#jsonrpc:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly jsonrpc: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "'2.0'"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "jsonrpc",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!IJsonRpcRequest#method:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly method: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "TMethod"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "method",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!IJsonRpcRequest#params:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly params: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "TParams"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "params",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "libsushi!IJsonRpcResponse:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type IJsonRpcResponse<T> = "
+            },
+            {
+              "kind": "Reference",
+              "text": "IJsonRpcSuccess",
+              "canonicalReference": "libsushi!IJsonRpcSuccess:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<T> | "
+            },
+            {
+              "kind": "Reference",
+              "text": "IJsonRpcError",
+              "canonicalReference": "libsushi!IJsonRpcError:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IJsonRpcResponse",
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "libsushi!IJsonRpcSuccess:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IJsonRpcSuccess<TResult> "
+            }
+          ],
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "TResult",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "IJsonRpcSuccess",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!IJsonRpcSuccess#id:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly id: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string | number | null"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "id",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!IJsonRpcSuccess#jsonrpc:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly jsonrpc: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "'2.0'"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "jsonrpc",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!IJsonRpcSuccess#result:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly result: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "TResult"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "result",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "libsushi!isJsonRpcError:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function isJsonRpcError<T>(response: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IJsonRpcResponse",
+              "canonicalReference": "libsushi!IJsonRpcResponse:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<T>"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "response",
+              "canonicalReference": "libsushi!~response"
+            },
+            {
+              "kind": "Content",
+              "text": " is "
+            },
+            {
+              "kind": "Reference",
+              "text": "IJsonRpcError",
+              "canonicalReference": "libsushi!IJsonRpcError:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 4,
+            "endIndex": 7
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "response",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "isOptional": false
+            }
+          ],
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "isJsonRpcError"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "libsushi!isJsonRpcSuccess:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function isJsonRpcSuccess<T>(response: "
+            },
+            {
+              "kind": "Reference",
+              "text": "IJsonRpcResponse",
+              "canonicalReference": "libsushi!IJsonRpcResponse:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<T>"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "response",
+              "canonicalReference": "libsushi!~response"
+            },
+            {
+              "kind": "Content",
+              "text": " is "
+            },
+            {
+              "kind": "Reference",
+              "text": "IJsonRpcSuccess",
+              "canonicalReference": "libsushi!IJsonRpcSuccess:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<T>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 4,
+            "endIndex": 8
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "response",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "isOptional": false
+            }
+          ],
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "isJsonRpcSuccess"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "libsushi!isTxExpired:function(1)",
+          "docComment": "/**\n * @export\n *\n * @param tx -  @return {boolean}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function isTxExpired(tx?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "TransactionDetails",
+              "canonicalReference": "libsushi!TransactionDetails:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "tx",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": true
+            }
+          ],
+          "name": "isTxExpired"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "libsushi!isTxIndeterminate:function(1)",
+          "docComment": "/**\n * @export\n *\n * @param tx -  @return {boolean}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function isTxIndeterminate(tx?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "TransactionDetails",
+              "canonicalReference": "libsushi!TransactionDetails:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "tx",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": true
+            }
+          ],
+          "name": "isTxIndeterminate"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "libsushi!isTxPending:function(1)",
+          "docComment": "/**\n * @export\n *\n * @param tx -  @return {boolean}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function isTxPending(tx?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "TransactionDetails",
+              "canonicalReference": "libsushi!TransactionDetails:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "tx",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": true
+            }
+          ],
+          "name": "isTxPending"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "libsushi!isTxSuccessful:function(1)",
+          "docComment": "/**\n * @export\n *\n * @param tx -  @return {boolean}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function isTxSuccessful(tx?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "TransactionDetails",
+              "canonicalReference": "libsushi!TransactionDetails:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "tx",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": true
+            }
+          ],
+          "name": "isTxSuccessful"
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "libsushi!JsonRpcError:interface",
+          "docComment": "/**\n * @export  @interface JsonRpcError\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface JsonRpcError "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "JsonRpcError",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!JsonRpcError#code:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "code: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "code",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!JsonRpcError#data:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "data?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "unknown"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "data",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!JsonRpcError#message:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "message: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "message",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "libsushi!JsonRpcMethod:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type JsonRpcMethod = "
+            },
+            {
+              "kind": "Content",
+              "text": "'eth_accounts' | 'eth_blockNumber' | 'eth_call' | 'eth_chainId' | 'eth_coinbase' | 'eth_estimateGas' | 'eth_gasPrice' | 'eth_getBalance' | 'eth_getBlockByHash' | 'eth_getBlockByNumber' | 'eth_getBlockTransactionCountByHash' | 'eth_getBlockTransactionCountByNumber' | 'eth_getCode' | 'eth_getLogs' | 'eth_getProof' | 'eth_getStorageAt' | 'eth_getTransactionByBlockHashAndIndex' | 'eth_getTransactionByBlockNumberAndIndex' | 'eth_getTransactionByHash' | 'eth_getTransactionCount' | 'eth_getTransactionReceipt' | 'eth_getUncleByBlockHashAndIndex' | 'eth_getUncleByBlockNumberAndIndex' | 'eth_getUncleCountByBlockHash' | 'eth_getUncleCountByBlockNumber' | 'eth_protocolVersion' | 'eth_sendRawTransaction' | 'eth_sendTransaction' | 'eth_sign' | 'eth_signTransaction' | 'eth_signTypedData' | 'eth_syncing'"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "JsonRpcMethod",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "libsushi!JsonRpcPayload:interface",
+          "docComment": "/**\n * @export  @interface JsonRpcPayload\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface JsonRpcPayload "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "JsonRpcPayload",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!JsonRpcPayload#id:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "id?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string | number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "id",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!JsonRpcPayload#jsonrpc:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "jsonrpc: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "jsonrpc",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!JsonRpcPayload#method:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "method: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "method",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!JsonRpcPayload#params:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "params?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "params",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "libsushi!JsonRpcRequest:interface",
+          "docComment": "/**\n * JsonRpcRequest  @export  @interface JsonRpcRequest\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface JsonRpcRequest "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "JsonRpcRequest",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!JsonRpcRequest#id:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "id: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number | string | null"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "id",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!JsonRpcRequest#jsonrpc:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "jsonrpc: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "'2.0'"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "jsonrpc",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!JsonRpcRequest#method:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "method: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "method",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!JsonRpcRequest#params:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "params?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "unknown[] | unknown"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "params",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "libsushi!JsonRpcResponse:interface",
+          "docComment": "/**\n * @export  @interface JsonRpcResponse  @template T\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface JsonRpcResponse<T> "
+            }
+          ],
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "JsonRpcResponse",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!JsonRpcResponse#error:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "error?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "JsonRpcError",
+                  "canonicalReference": "libsushi!JsonRpcError:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "error",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!JsonRpcResponse#id:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "id?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number | string | null"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "id",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!JsonRpcResponse#jsonrpc:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "jsonrpc: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "'2.0'"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "jsonrpc",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!JsonRpcResponse#result:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "result?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "T"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "result",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "libsushi!parseReasonCode:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "parseReasonCode: "
+            },
+            {
+              "kind": "Content",
+              "text": "(messageData: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "parseReasonCode",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Namespace",
+          "canonicalReference": "libsushi!PrivateTransaction:namespace",
+          "docComment": "",
+          "excerptTokens": [],
+          "releaseTag": "None",
+          "name": "PrivateTransaction",
+          "members": [
+            {
+              "kind": "Function",
+              "canonicalReference": "libsushi!PrivateTransaction.privateTx:function(1)",
+              "docComment": "/**\n * @export\n *\n * @param privateTx -  @return {*}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export declare function privateTx(privateTx: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "privateTx",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "privateTx"
+            },
+            {
+              "kind": "Enum",
+              "canonicalReference": "libsushi!PrivateTransaction.PrivateTxState:enum",
+              "docComment": "/**\n * @enum PrivateTxState  @interface PrivateTxStatus  @interface RelayResponse  @description Transaction State Types\n *\n * - UNCHECKED -> Tx status has not been checked and there's no information about it. - PROCESSING -> Tx checks are in place until a resolution happens: OK, INDETERMINATE, ERROR. - OK -> Relay received the Tx && all downstream miners accepted without complains && tx mined successfully - INDETERMINATE -> Relay received correctly the Tx && at least one miner accepted the TX && TX potentially mineable - ERROR -> Relay haven't received the TX || none of the miners accepted the Tx || Tx was not mined successfully\n *\n * /**\n *\n * @export  @enum {number}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export declare enum PrivateTxState "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "PrivateTxState",
+              "members": [
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "libsushi!PrivateTransaction.PrivateTxState.ERROR:member",
+                  "docComment": "",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "ERROR = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"ERROR\""
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ERROR",
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "libsushi!PrivateTransaction.PrivateTxState.INDETERMINATE:member",
+                  "docComment": "",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "INDETERMINATE = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"INDETERMINATE\""
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "INDETERMINATE",
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "libsushi!PrivateTransaction.PrivateTxState.OK:member",
+                  "docComment": "",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "OK = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"OK\""
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "OK",
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "libsushi!PrivateTransaction.PrivateTxState.PROCESSING:member",
+                  "docComment": "",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "PROCESSING = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"PROCESSING\""
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "PROCESSING",
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "libsushi!PrivateTransaction.PrivateTxState.UNCHECKED:member",
+                  "docComment": "",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "UNCHECKED = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"UNCHECKED\""
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "UNCHECKED",
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "Interface",
+              "canonicalReference": "libsushi!PrivateTransaction.PrivateTxStatus:interface",
+              "docComment": "/**\n * @export  @interface PrivateTxStatus\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface PrivateTxStatus "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "PrivateTxStatus",
+              "members": [
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "libsushi!PrivateTransaction.PrivateTxStatus#minedAt:member",
+                  "docComment": "",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "minedAt?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": true,
+                  "releaseTag": "Public",
+                  "name": "minedAt",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "libsushi!PrivateTransaction.PrivateTxStatus#receivedAt:member",
+                  "docComment": "",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "receivedAt: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "releaseTag": "Public",
+                  "name": "receivedAt",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "libsushi!PrivateTransaction.PrivateTxStatus#relayedAt:member",
+                  "docComment": "",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "relayedAt?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": true,
+                  "releaseTag": "Public",
+                  "name": "relayedAt",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "libsushi!PrivateTransaction.PrivateTxStatus#relayFailure:member",
+                  "docComment": "",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "relayFailure?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "boolean"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": true,
+                  "releaseTag": "Public",
+                  "name": "relayFailure",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "libsushi!PrivateTransaction.PrivateTxStatus#relayResponses:member",
+                  "docComment": "",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "relayResponses?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "RelayResponses",
+                      "canonicalReference": "libsushi!RelayResponses:type"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": true,
+                  "releaseTag": "Public",
+                  "name": "relayResponses",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "libsushi!PrivateTransaction.PrivateTxStatus#transactionHash:member",
+                  "docComment": "",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "transactionHash: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "releaseTag": "Public",
+                  "name": "transactionHash",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Interface",
+              "canonicalReference": "libsushi!PrivateTransaction.RelayResponse:interface",
+              "docComment": "/**\n * @export  @interface RelayResponse\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface RelayResponse "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "RelayResponse",
+              "members": [
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "libsushi!PrivateTransaction.RelayResponse#error:member",
+                  "docComment": "",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "error?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": true,
+                  "releaseTag": "Public",
+                  "name": "error",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "libsushi!PrivateTransaction.RelayResponse#response:member",
+                  "docComment": "",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "response: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "JsonRpcResponse",
+                      "canonicalReference": "libsushi!JsonRpcResponse:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<any>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "releaseTag": "Public",
+                  "name": "response",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  }
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "TypeAlias",
+              "canonicalReference": "libsushi!PrivateTransaction.RelayResponses:type",
+              "docComment": "/**\n * @type RelayResponses\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export declare type RelayResponses = "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Record",
+                  "canonicalReference": "!Record:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<string, "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "RelayResponse",
+                  "canonicalReference": "libsushi!RelayResponse:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "RelayResponses",
+              "typeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 5
+              }
+            }
+          ]
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "libsushi!privateTx:function(1)",
+          "docComment": "/**\n * @export\n *\n * @param privateTx -  @return {*}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function privateTx(privateTx: "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "privateTx",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "privateTx"
+        },
+        {
+          "kind": "Enum",
+          "canonicalReference": "libsushi!PrivateTxState:enum",
+          "docComment": "/**\n * @enum PrivateTxState  @interface PrivateTxStatus  @interface RelayResponse  @description Transaction State Types\n *\n * - UNCHECKED -> Tx status has not been checked and there's no information about it. - PROCESSING -> Tx checks are in place until a resolution happens: OK, INDETERMINATE, ERROR. - OK -> Relay received the Tx && all downstream miners accepted without complains && tx mined successfully - INDETERMINATE -> Relay received correctly the Tx && at least one miner accepted the TX && TX potentially mineable - ERROR -> Relay haven't received the TX || none of the miners accepted the Tx || Tx was not mined successfully\n *\n * /**\n *\n * @export  @enum {number}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare enum PrivateTxState "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "PrivateTxState",
+          "members": [
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "libsushi!PrivateTxState.ERROR:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "ERROR = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"ERROR\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "ERROR",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "libsushi!PrivateTxState.INDETERMINATE:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "INDETERMINATE = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"INDETERMINATE\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "INDETERMINATE",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "libsushi!PrivateTxState.OK:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "OK = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"OK\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "OK",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "libsushi!PrivateTxState.PROCESSING:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "PROCESSING = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"PROCESSING\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "PROCESSING",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "EnumMember",
+              "canonicalReference": "libsushi!PrivateTxState.UNCHECKED:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "UNCHECKED = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"UNCHECKED\""
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "UNCHECKED",
+              "initializerTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "libsushi!PrivateTxStatus:interface",
+          "docComment": "/**\n * @export  @interface PrivateTxStatus\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface PrivateTxStatus "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "PrivateTxStatus",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!PrivateTxStatus#minedAt:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "minedAt?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "minedAt",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!PrivateTxStatus#receivedAt:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "receivedAt: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "receivedAt",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!PrivateTxStatus#relayedAt:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "relayedAt?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "relayedAt",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!PrivateTxStatus#relayFailure:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "relayFailure?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "relayFailure",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!PrivateTxStatus#relayResponses:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "relayResponses?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "RelayResponses",
+                  "canonicalReference": "libsushi!RelayResponses:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "relayResponses",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!PrivateTxStatus#transactionHash:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "transactionHash: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "transactionHash",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "libsushi!ProviderRpcError:class",
+          "docComment": "/**\n * Error subclass implementing Ethereum Provider errors per EIP-1193.\n *\n * @see\n *\n * https://eips.ethereum.org/EIPS/eip-1193\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class ProviderRpcError<T = "
+            },
+            {
+              "kind": "Content",
+              "text": "undefined"
+            },
+            {
+              "kind": "Content",
+              "text": "> extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "RpcError",
+              "canonicalReference": "libsushi!RpcError:class"
+            },
+            {
+              "kind": "Content",
+              "text": "<T> "
+            }
+          ],
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "ProviderRpcError",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "libsushi!ProviderRpcError:constructor(1)",
+              "docComment": "/**\n * Create an Ethereum Provider JSON-RPC error. `code` must be an integer in the 1000 <= 4999 range.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(\n    code: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "4001 | 4100 | 4200 | 4900 | 4901 | 4902"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", \n    message: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", \n    internal?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "unknown"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", \n    data?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "T"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "code",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "message",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "internal",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": true
+                },
+                {
+                  "parameterName": "data",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  },
+                  "isOptional": true
+                }
+              ]
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Namespace",
+          "canonicalReference": "libsushi!Reducer:namespace",
+          "docComment": "",
+          "excerptTokens": [],
+          "releaseTag": "None",
+          "name": "Reducer",
+          "members": [
+            {
+              "kind": "Variable",
+              "canonicalReference": "libsushi!Reducer.default:var",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "_default: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "import(\"@reduxjs/toolkit/dist/createReducer\")."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ReducerWithInitialState",
+                  "canonicalReference": "@reduxjs/toolkit!ReducerWithInitialState:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "TransactionState",
+                  "canonicalReference": "libsushi!TransactionState:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "default",
+              "variableTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 6
+              }
+            },
+            {
+              "kind": "Variable",
+              "canonicalReference": "libsushi!Reducer.initialState:var",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "initialState: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "TransactionState",
+                  "canonicalReference": "libsushi!TransactionState:type"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "initialState",
+              "variableTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "Interface",
+              "canonicalReference": "libsushi!Reducer.TransactionDetails:interface",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface TransactionDetails "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "TransactionDetails",
+              "members": [
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "libsushi!Reducer.TransactionDetails#addedTime:member",
+                  "docComment": "",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "addedTime: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "number"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "releaseTag": "Public",
+                  "name": "addedTime",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "libsushi!Reducer.TransactionDetails#approval:member",
+                  "docComment": "",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "approval?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "{\n        tokenAddress: string;\n        spender: string;\n    }"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": true,
+                  "releaseTag": "Public",
+                  "name": "approval",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "libsushi!Reducer.TransactionDetails#claim:member",
+                  "docComment": "",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "claim?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "{\n        recipient: string;\n    }"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": true,
+                  "releaseTag": "Public",
+                  "name": "claim",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "libsushi!Reducer.TransactionDetails#confirmedTime:member",
+                  "docComment": "",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "confirmedTime?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "number"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": true,
+                  "releaseTag": "Public",
+                  "name": "confirmedTime",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "libsushi!Reducer.TransactionDetails#from:member",
+                  "docComment": "",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "from: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "releaseTag": "Public",
+                  "name": "from",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "libsushi!Reducer.TransactionDetails#hash:member",
+                  "docComment": "",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "hash: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "releaseTag": "Public",
+                  "name": "hash",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "libsushi!Reducer.TransactionDetails#lastCheckedBlockNumber:member",
+                  "docComment": "",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "lastCheckedBlockNumber?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "number"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": true,
+                  "releaseTag": "Public",
+                  "name": "lastCheckedBlockNumber",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "libsushi!Reducer.TransactionDetails#privateTx:member",
+                  "docComment": "",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "privateTx?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "{\n        state: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PrivateTxState",
+                      "canonicalReference": "libsushi!PrivateTxState:enum"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";\n        status?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PrivateTxStatus",
+                      "canonicalReference": "libsushi!PrivateTxStatus:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";\n    }"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": true,
+                  "releaseTag": "Public",
+                  "name": "privateTx",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 6
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "libsushi!Reducer.TransactionDetails#receipt:member",
+                  "docComment": "",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "receipt?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "SerializableTransactionReceipt",
+                      "canonicalReference": "libsushi!SerializableTransactionReceipt:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": true,
+                  "releaseTag": "Public",
+                  "name": "receipt",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "libsushi!Reducer.TransactionDetails#summary:member",
+                  "docComment": "",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "summary?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": true,
+                  "releaseTag": "Public",
+                  "name": "summary",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "TypeAlias",
+              "canonicalReference": "libsushi!Reducer.TransactionState:type",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export declare type TransactionState = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{\n    [key in "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ChainId",
+                  "canonicalReference": "libsushi!ChainId:enum"
+                },
+                {
+                  "kind": "Content",
+                  "text": "]?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Record",
+                  "canonicalReference": "!Record:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "txHash",
+                  "canonicalReference": "libsushi!~txHash:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "TransactionDetails",
+                  "canonicalReference": "libsushi!TransactionDetails:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">;\n}"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "TransactionState",
+              "typeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 10
+              }
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "libsushi!RelayResponse:interface",
+          "docComment": "/**\n * @export  @interface RelayResponse\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface RelayResponse "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "RelayResponse",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!RelayResponse#error:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "error?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "error",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!RelayResponse#response:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "response: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "JsonRpcResponse",
+                  "canonicalReference": "libsushi!JsonRpcResponse:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<any>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "response",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "libsushi!RelayResponses:type",
+          "docComment": "/**\n * @type RelayResponses\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type RelayResponses = "
+            },
+            {
+              "kind": "Reference",
+              "text": "Record",
+              "canonicalReference": "!Record:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<string, "
+            },
+            {
+              "kind": "Reference",
+              "text": "RelayResponse",
+              "canonicalReference": "libsushi!RelayResponse:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "RelayResponses",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 5
+          }
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "libsushi!ResourceUnavailableError:class",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class ResourceUnavailableError extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "RpcError",
+              "canonicalReference": "libsushi!RpcError:class"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ResourceUnavailableError",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "libsushi!ResourceUnavailableError:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `ResourceUnavailableError` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(error: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "unknown"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "error",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "libsushi!ResourceUnavailableError#name:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "name: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "name",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          },
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "libsushi!RpcError:class",
+          "docComment": "/**\n * Error subclass implementing JSON RPC 2.0 errors and Ethereum RPC errors per EIP-1474.\n *\n * @see\n *\n * https://eips.ethereum.org/EIPS/eip-1474\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class RpcError<T = "
+            },
+            {
+              "kind": "Content",
+              "text": "undefined"
+            },
+            {
+              "kind": "Content",
+              "text": "> extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "Error",
+              "canonicalReference": "!Error:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "RpcError",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "libsushi!RpcError:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `RpcError` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(\n    code: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", \n    message: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", \n    internal?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "unknown"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", \n    data?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "T"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "code",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "message",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "isOptional": false
+                },
+                {
+                  "parameterName": "internal",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "isOptional": true
+                },
+                {
+                  "parameterName": "data",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  },
+                  "isOptional": true
+                }
+              ]
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "libsushi!RpcError#code:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly code: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "code",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "libsushi!RpcError#data:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly data?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "T"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "data",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "libsushi!RpcError#internal:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly internal?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "unknown"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "internal",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "libsushi!SerializableTransactionReceipt:interface",
+          "docComment": "/**\n * @export  @interface SerializableTransactionReceipt\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface SerializableTransactionReceipt "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "SerializableTransactionReceipt",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!SerializableTransactionReceipt#blockHash:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "blockHash: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "blockHash",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!SerializableTransactionReceipt#blockNumber:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "blockNumber: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "blockNumber",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!SerializableTransactionReceipt#contractAddress:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "contractAddress: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "contractAddress",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!SerializableTransactionReceipt#from:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "from: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "from",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!SerializableTransactionReceipt#status:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "status?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "status",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!SerializableTransactionReceipt#to:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "to: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "to",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!SerializableTransactionReceipt#transactionHash:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "transactionHash: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "transactionHash",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!SerializableTransactionReceipt#transactionIndex:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "transactionIndex: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "transactionIndex",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "libsushi!SwitchChainError:class",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class SwitchChainError extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ProviderRpcError",
+              "canonicalReference": "libsushi!ProviderRpcError:class"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "SwitchChainError",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "libsushi!SwitchChainError:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `SwitchChainError` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(error: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "unknown"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "error",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "libsushi!SwitchChainError#name:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "name: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "name",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          },
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "libsushi!SwitchChainNotSupportedError:class",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class SwitchChainNotSupportedError extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "Error",
+              "canonicalReference": "!Error:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "SwitchChainNotSupportedError",
+          "members": [
+            {
+              "kind": "Property",
+              "canonicalReference": "libsushi!SwitchChainNotSupportedError#message:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "message: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "message",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "libsushi!SwitchChainNotSupportedError#name:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "name: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "name",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          },
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "libsushi!TransactionDetails:interface",
+          "docComment": "/**\n * @export  @interface TransactionDetails\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface TransactionDetails "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "TransactionDetails",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!TransactionDetails#addedTime:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "addedTime: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "addedTime",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!TransactionDetails#approval:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "approval?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{\n        tokenAddress: string;\n        spender: string;\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "approval",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!TransactionDetails#claim:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "claim?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{\n        recipient: string;\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "claim",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!TransactionDetails#confirmedTime:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "confirmedTime?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "confirmedTime",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!TransactionDetails#from:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "from: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "from",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!TransactionDetails#hash:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "hash: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "hash",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!TransactionDetails#lastCheckedBlockNumber:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "lastCheckedBlockNumber?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "lastCheckedBlockNumber",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!TransactionDetails#privateTx:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "privateTx?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{\n        state: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "PrivateTxState",
+                  "canonicalReference": "libsushi!PrivateTxState:enum"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";\n        status?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "PrivateTxStatus",
+                  "canonicalReference": "libsushi!PrivateTxStatus:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "privateTx",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 6
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!TransactionDetails#receipt:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "receipt?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "SerializableTransactionReceipt",
+                  "canonicalReference": "libsushi!SerializableTransactionReceipt:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "receipt",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "libsushi!TransactionDetails#summary:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "summary?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "summary",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "libsushi!txMinutesPending:function(1)",
+          "docComment": "/**\n * @export\n *\n * @param tx -  @return {number}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function txMinutesPending(tx?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "TransactionDetails",
+              "canonicalReference": "libsushi!TransactionDetails:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "number"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "tx",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": true
+            }
+          ],
+          "name": "txMinutesPending"
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "libsushi!updatePrivateTxStatus:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "updatePrivateTxStatus: "
+            },
+            {
+              "kind": "Content",
+              "text": "import(\"@reduxjs/toolkit\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "ActionCreatorWithOptionalPayload",
+              "canonicalReference": "@reduxjs/toolkit!ActionCreatorWithOptionalPayload:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<{\n    chainId: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ChainId",
+              "canonicalReference": "libsushi!ChainId:enum"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    hash: string;\n    status: "
+            },
+            {
+              "kind": "Reference",
+              "text": "PrivateTxStatus",
+              "canonicalReference": "libsushi!PrivateTxStatus:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n}, string>"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "updatePrivateTxStatus",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 8
+          }
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "libsushi!UserRejectedRequestError:class",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class UserRejectedRequestError extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ProviderRpcError",
+              "canonicalReference": "libsushi!ProviderRpcError:class"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "UserRejectedRequestError",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "libsushi!UserRejectedRequestError:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `UserRejectedRequestError` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(error: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "unknown"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "error",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "libsushi!UserRejectedRequestError#name:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "name: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "name",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          },
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "libsushi!validateJsonRpcResponse:function(1)",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function validateJsonRpcResponse<T>(response: "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "response",
+              "canonicalReference": "libsushi!~response"
+            },
+            {
+              "kind": "Content",
+              "text": " is "
+            },
+            {
+              "kind": "Reference",
+              "text": "IJsonRpcResponse",
+              "canonicalReference": "libsushi!IJsonRpcResponse:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<T>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 7
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "response",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            }
+          ],
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              }
+            }
+          ],
+          "name": "validateJsonRpcResponse"
+        }
+      ]
+    }
+  ]
+}
