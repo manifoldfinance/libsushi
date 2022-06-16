@@ -3,9 +3,17 @@ import * as _reduxjs_toolkit_dist_createReducer from '@reduxjs/toolkit/dist/crea
 import { TransactionReceipt, Provider } from '@ethersproject/providers';
 import { TransactionResponse } from '@ethersproject/abstract-provider';
 
+/**
+ * @package OpenMev ChainId
+ */
+/**
+* OPENMEV = '73300705280', // 0x1111100000
+*/
+/**
+* @enum ChainId
+*/
 declare enum ChainId {
     MAINNET = "1",
-    OPENMEV = "73300705280",
     GORELI = "5"
 }
 declare let OPENMEV_SUPPORTED_NETWORKS: ChainId[];
