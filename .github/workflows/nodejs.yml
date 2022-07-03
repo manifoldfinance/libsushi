@@ -24,6 +24,8 @@ jobs:
         node-version: ['16.x']
         os: ['ubuntu-latest']
 
+    # this line will prevent forks of this repo from uploading lsif indexes
+    if: github.repository == 'manifoldfinance/libsushi'
     steps:
       - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version }}
@@ -79,3 +81,14 @@ jobs:
           tags: true
           force: true
           branch: ${{ steps.extractBranch.outputs.branch }}
+
+      - name: Generate index
+        uses: docker://sourcegraph/scip-typescript:latest
+        with:
+          args: scip-typescript index
+      - name: Upload index
+        uses: docker://sourcegraph/src-cli:latest
+        with:
+          # this will upload to Sourcegraph.com, you may need to substitute a different command
+          # by default, we ignore failures to avoid disrupting CI pipelines with non-critical errors.
+          args: lsif upload -github-token=${{ secrets.GITHUB_TOKEN }} -ignore-upload-failure
