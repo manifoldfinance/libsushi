@@ -1,6 +1,16 @@
+/**
+ * @package OpenMev ChainId
+ */
+
+/**
+* OPENMEV = '73300705280', // 0x1111100000
+*/
+
+/**
+* @enum ChainId
+*/
 export enum ChainId {
   MAINNET = '1',
-  OPENMEV = '73300705280', // 0x1111100000
   GORELI = '5',
 }
 
