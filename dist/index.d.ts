@@ -629,10 +629,7 @@ declare const getTransactionError: (tx: TransactionResponse, receipt: Transactio
  */
 declare const parseReasonCode: (messageData: string) => string;
 
-/**
-@export stderrors
-github.com/WalletConnect/walletconnect-utils/blob/master/jsonrpc/utils/src/constants.ts
-*/
+declare const RESOURCE_ERROR = "RESOURCE_ERROR";
 declare const PARSE_ERROR = "PARSE_ERROR";
 declare const INVALID_REQUEST = "INVALID_REQUEST";
 declare const METHOD_NOT_FOUND = "METHOD_NOT_FOUND";
@@ -642,6 +639,10 @@ declare const SERVER_ERROR = "SERVER_ERROR";
 declare const RESERVED_ERROR_CODES: number[];
 declare const SERVER_ERROR_CODE_RANGE: number[];
 declare const STANDARD_ERROR_MAP: {
+    RESOURCE_ERROR: {
+        code: number;
+        message: string;
+    };
     PARSE_ERROR: {
         code: number;
         message: string;
@@ -668,4 +669,4 @@ declare const STANDARD_ERROR_MAP: {
     };
 };
 
-export { AddChainError, AddressZero, BURN_ADDRESS, BadDataError, BlockSpecifier, BufferOverrunError, CallExceptionError, ChainId, ChainNotConfiguredError, CodedEthersError, ConnectorAlreadyConnectedError, ConnectorNotFoundError, DeadAddress, EIP191_PREFIX_FOR_EIP712_STRUCTURED_DATA, ErrorAccessList, ErrorCode, ErrorFetchRequest, ErrorFetchRequestWithBody, ErrorFetchResponse, ErrorFetchResponseWithBody, ErrorSignature, ErrorTransaction, EthersError, HttpJsonRpcError, IJsonRpcError, IJsonRpcRequest, IJsonRpcResponse, IJsonRpcSuccess, INTERNAL_ERROR, INVALID_PARAMS, INVALID_REQUEST, InsufficientFundsError, InvalidArgumentError, JsonRpcError, JsonRpcMethod, JsonRpcPayload, JsonRpcRequest, JsonRpcResponse, MAINNET_RPC_URL, METHOD_NOT_FOUND, MissingArgumentError, NetworkError, NonceExpiredError, NotImplementedError, NumericFaultError, OPENMEV_METAMASK_CHAIN_ID, OPENMEV_METAMASK_SUPPORTED_NETWORKS, OPENMEV_SUPPORTED_NETWORKS, OffchainFaultError, PARSE_ERROR, privateTransaction as PrivateTransaction, PrivateTxState, PrivateTxStatus, ProviderRpcError, RESERVED_ERROR_CODES, reducer as Reducer, RegularizedBlockSpecifier, RelayResponse, RelayResponses, ReplacementUnderpricedError, ResourceUnavailableError, RpcError, SERVER_ERROR, SERVER_ERROR_CODE_RANGE, STANDARD_ERROR_MAP, SerializableTransactionReceipt, ServerError, SwitchChainError, SwitchChainNotSupportedError, TimeoutError, TransactionDetails$1 as TransactionDetails, TransactionReplacedError, UnconfiguredNameError, UnexpectedArgumentError, UnknownError, UnpredictableGasLimitError, UnsupportedOperationError, UserRejectedRequestError, addTransaction, checkedTransaction, clearAllTransactions, fetchJsonRpc, finalizeTransaction, getTransactionError, isCallException, isError, isJsonRpcError, isJsonRpcSuccess, isTxExpired, isTxIndeterminate, isTxPending, isTxSuccessful, parseReasonCode, privateTx, txMinutesPending, updatePrivateTxStatus, validateJsonRpcResponse };
+export { AddChainError, AddressZero, BURN_ADDRESS, BadDataError, BlockSpecifier, BufferOverrunError, CallExceptionError, ChainId, ChainNotConfiguredError, CodedEthersError, ConnectorAlreadyConnectedError, ConnectorNotFoundError, DeadAddress, EIP191_PREFIX_FOR_EIP712_STRUCTURED_DATA, ErrorAccessList, ErrorCode, ErrorFetchRequest, ErrorFetchRequestWithBody, ErrorFetchResponse, ErrorFetchResponseWithBody, ErrorSignature, ErrorTransaction, EthersError, HttpJsonRpcError, IJsonRpcError, IJsonRpcRequest, IJsonRpcResponse, IJsonRpcSuccess, INTERNAL_ERROR, INVALID_PARAMS, INVALID_REQUEST, InsufficientFundsError, InvalidArgumentError, JsonRpcError, JsonRpcMethod, JsonRpcPayload, JsonRpcRequest, JsonRpcResponse, MAINNET_RPC_URL, METHOD_NOT_FOUND, MissingArgumentError, NetworkError, NonceExpiredError, NotImplementedError, NumericFaultError, OPENMEV_METAMASK_CHAIN_ID, OPENMEV_METAMASK_SUPPORTED_NETWORKS, OPENMEV_SUPPORTED_NETWORKS, OffchainFaultError, PARSE_ERROR, privateTransaction as PrivateTransaction, PrivateTxState, PrivateTxStatus, ProviderRpcError, RESERVED_ERROR_CODES, RESOURCE_ERROR, reducer as Reducer, RegularizedBlockSpecifier, RelayResponse, RelayResponses, ReplacementUnderpricedError, ResourceUnavailableError, RpcError, SERVER_ERROR, SERVER_ERROR_CODE_RANGE, STANDARD_ERROR_MAP, SerializableTransactionReceipt, ServerError, SwitchChainError, SwitchChainNotSupportedError, TimeoutError, TransactionDetails$1 as TransactionDetails, TransactionReplacedError, UnconfiguredNameError, UnexpectedArgumentError, UnknownError, UnpredictableGasLimitError, UnsupportedOperationError, UserRejectedRequestError, addTransaction, checkedTransaction, clearAllTransactions, fetchJsonRpc, finalizeTransaction, getTransactionError, isCallException, isError, isJsonRpcError, isJsonRpcSuccess, isTxExpired, isTxIndeterminate, isTxPending, isTxSuccessful, parseReasonCode, privateTx, txMinutesPending, updatePrivateTxStatus, validateJsonRpcResponse };
