@@ -82,14 +82,14 @@ export type JsonRpcMethod =
   | 'eth_estimateGas'
   | 'eth_gasPrice'
   | 'eth_getBalance'
-  | 'eth_getBlockByHash'
-  | 'eth_getBlockByNumber'
-  | 'eth_getBlockTransactionCountByHash'
-  | 'eth_getBlockTransactionCountByNumber'
   | 'eth_getCode'
   | 'eth_getLogs'
   | 'eth_getProof'
   | 'eth_getStorageAt'
+  | 'eth_getBlockByHash'
+  | 'eth_getBlockByNumber'
+  | 'eth_getBlockTransactionCountByHash'
+  | 'eth_getBlockTransactionCountByNumber'
   | 'eth_getTransactionByBlockHashAndIndex'
   | 'eth_getTransactionByBlockNumberAndIndex'
   | 'eth_getTransactionByHash'
@@ -105,7 +105,9 @@ export type JsonRpcMethod =
   | 'eth_sign'
   | 'eth_signTransaction'
   | 'eth_signTypedData'
-  | 'eth_syncing';
+  | 'web3_clientVersion';
+  | 'net_version';
+
 export interface IJsonRpcRequest<TMethod extends JsonRpcMethod, TParams extends Array<unknown>> {
   readonly jsonrpc: '2.0';
   readonly id: string | number | null;
