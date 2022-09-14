@@ -63,7 +63,7 @@ jobs:
       - name: Check packed js changes
         id: packedJsStatus
         run: echo ::set-output name=changes::$(git status ${{ env.PACKED_JS_PATH }} --porcelain)
-
+      - uses: preactjs/compressed-size-action@v2
       - name: Commit packed js
         id: commitPackedJs
         if: steps.packedJsStatus.outputs.changes
